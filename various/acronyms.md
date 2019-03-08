@@ -16,3 +16,5 @@ These are some of the common ones.
 * **RTBB** - Refers to the parameter RT\_BUY\_BUYDOWN
 * **BEP** - Break-even point - a different name for average bought price.
 
+
+

@@ -6,6 +6,8 @@ Below you'll find short descriptions on how to do that with a few of the most us
 
 **If you already have an Ethereum wallet, only the steps for adding a custom contract apply.**
 
+####  
+
 ## Ethereum Wallet
 
 **Step 1: create an account**
@@ -30,6 +32,8 @@ Copy the account address using the **Copy address** button. Use this address in 
 
 ![](https://user-images.githubusercontent.com/2372008/51181359-406fb080-18cb-11e9-8b5d-9bd307180660.png)
 
+####  
+
 ## MyEtherWallet
 
 **Step 1: create a wallet**
@@ -52,6 +56,8 @@ Copy the account address shown on top of the page. Use this address in Gunbot.
 
 ![](https://user-images.githubusercontent.com/2372008/51180319-73fd0b80-18c8-11e9-8476-99e858267c8b.png)
 
+####  
+
 ## Metamask
 
 **Step 1: install browser add-on and create a wallet**
@@ -73,6 +79,8 @@ Enter the GUNTHY token contract address and confirm.
 **Step 3: copy address**
 
 Copy the account address shown on top left side of the page. Use this address in Gunbot.
+
+####  
 
 ## MyCrypto
 

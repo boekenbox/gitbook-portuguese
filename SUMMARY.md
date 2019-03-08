@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Welcome to the Gunbot wiki](README.md)
+* [Welcome to the Portuguese Gunbot wiki](README.md)
 
 ## About
 
