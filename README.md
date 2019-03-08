@@ -2,7 +2,7 @@
 description: 'This wiki is written for the latest stable Gunbot release: v12'
 ---
 
-# Welcome to the Gunbot wiki
+# Welcome to the Portuguese Gunbot wiki
 
 **Gunbot is an easy to use, advanced crypto trading bot. You define your trading strategy and watch Gunbot do the trading for you. Enabling you to get up to hundreds of profitable trades per day, 24/7.**
 
