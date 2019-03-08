@@ -1,17 +1,17 @@
 # Table of contents
 
-* [Welcome to the Portuguese Gunbot wiki](README.md)
+* [Bem vindo ao Wiki em português do Gunbot!](README.md)
 
 ## About
 
 * [What's new in v12?](about/whats-new-v12.md)
 * [How to purchase Gunbot](about/resellers.md)
-* [Supported exchanges](about/supported-exchanges.md)
+* [Exchanges suportadas](about/supported-exchanges.md)
 * [System requirements](about/system-requirements.md)
 
 ## Setup & general settings
 
-* [Installation & startup](setup-and-general-settings/installation/README.md)
+* [Instalação & início](setup-and-general-settings/installation/README.md)
   * [Download software](setup-and-general-settings/installation/download.md)
   * [Windows installation](setup-and-general-settings/installation/windows.md)
   * [macOS installation](setup-and-general-settings/installation/macos.md)

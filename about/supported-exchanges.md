@@ -2,7 +2,7 @@
 description: Gunbot currently supports trading at the following exchanges.
 ---
 
-# Supported exchanges
+# Exchanges suportadas
 
 | Exchange | Name in config | Native strategies | TradingView alerts |
 | :--- | :--- | :--- | :--- |
@@ -18,6 +18,4 @@ description: Gunbot currently supports trading at the following exchanges.
 | **Kraken** | `kraken` | Regular | Regular & Margin |
 | **KuCoin** | `kucoin` | Regular | Regular |
 | **Poloniex** | `poloniex` | Regular | Regular & Margin |
-
-
 

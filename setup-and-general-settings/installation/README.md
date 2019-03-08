@@ -1,10 +1,8 @@
-# Installation & startup
+# Instalação & início
 
 ## Download Gunbot
 
 {% page-ref page="download.md" %}
-
-
 
 ## Installation instructions
 
@@ -17,8 +15,6 @@ Installation guides per platform can be found here:
 {% page-ref page="linux.md" %}
 
 {% page-ref page="arm.md" %}
-
-
 
 ## Upgrading
 

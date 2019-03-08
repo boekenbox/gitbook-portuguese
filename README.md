@@ -1,20 +1,20 @@
 ---
-description: 'This wiki is written for the latest stable Gunbot release: v12'
+description: 'Esse wiki (em atualização) é escrito para a última versão estável: v12'
 ---
 
-# Welcome to the Portuguese Gunbot wiki
+# Bem vindo ao Wiki em português do Gunbot!
 
-**Gunbot is an easy to use, advanced crypto trading bot. You define your trading strategy and watch Gunbot do the trading for you. Enabling you to get up to hundreds of profitable trades per day, 24/7.**
+**O Gunbot é um trading bot de criptomoedas, avançado e fácil de usar. Você define sua estratégia de negociação e assiste o Gunbot fazer a negociação para você. Isso permitindo que você realize centenas de negociações lucrativas por dia, 24 horas por dia, sete dias por semana.**
 
-For security reasons, Gunbot runs on your local computer or your server only. This way your trading API secret stays private, and nobody can influence or monitor your trading.
+Por motivos de segurança, o Gunbot é executado apenas em seu computador local ou em seu servidor. Desta forma, o segredo da sua API de negociação permanece privado e ninguém pode influenciar sua negociação.
 
-No need for a subscription, a one time fee gets you lifetime support and software updates.
+Não há necessidade de uma assinatura, uma taxa única recebe suporte vitalício e atualizações de software.
 
-> _We aim to build the perfect money machine._
+> _Nosso objetivo é construir a máquina de dinheiro perfeita._
 
-#### Gunbot is used by thousands of users and has an awesome community ❤️
+## Gunbot é usado por milhares de usuários e tem uma comunidade incrível ❤️
 
-![](.gitbook/assets/image%20%2817%29.png)
+![](.gitbook/assets/image-17%20%281%29.png)
 
 {% page-ref page="setup-and-general-settings/installation/" %}
 
@@ -25,10 +25,10 @@ No need for a subscription, a one time fee gets you lifetime support and softwar
 {% page-ref page="how-to-work-with-gunbot/editing-strategies-and-pairs/" %}
 
 {% hint style="warning" %}
-#### Disclaimer
+## Aviso
 
-The information provided on this wiki does not constitute investment advice, financial advice, trading advice, or any other sort of advice, and you should not treat any of the wiki's content as such. Gunbot does not recommend that any asset should be bought, sold, or held by you. Nothing on this website should be taken as an offer to buy, sell or hold a cryptocurrency. Do conduct your own due diligence and consult your financial advisory before making any investment decision. Gunbot will not be held responsible for the investment decisions you make based on the information published on this wiki.
+As informações fornecidas neste wiki não constituem conselhos de investimento, aconselhamento financeiro, conselhos de negociação ou qualquer outro tipo de aconselhamento, e você não deve tratar qualquer conteúdo do wiki como tal. Gunbot não recomenda que qualquer ativo seja comprado, vendido ou mantido por você. Nada neste site deve ser tomado como uma oferta para comprar, vender ou manter uma criptomoeda. Realize sua própria auditoria e consulte sua consultoria financeira antes de tomar qualquer decisão de investimento. O Gunbot não será responsável pelas decisões de investimento que você fizer com base nas informações publicadas neste wiki.
 {% endhint %}
 
- **Project origin:** [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=1715214.0).
+**Origem do Projeto:** [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=1715214.0).
 
