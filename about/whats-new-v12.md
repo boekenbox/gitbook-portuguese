@@ -16,7 +16,7 @@ description: >-
 * **List view in GUI dashboard**: New list view for pairs on the dashoard: all relevant info in one quick overview, improves load times especially for setups with many trading pairs.
 * **Chart improvements**: The GUI can now show all Gunbot supported indicators. Trading targets are now shown in charts.
 * **Renko candles:** You can now use Renko candles instead of regular candle sticks \(Currently only works for margin trading with ichimoku\).
-* **Deprecating `CANCEL_ORDERS_CYCLE_CAP` except when using `MAKER_FEES`**: orders are now only automatically cancelled if bid/ask are above/below the order rate.
+* **Deprecating** `CANCEL_ORDERS_CYCLE_CAP` **except when using** `MAKER_FEES`: orders are now only automatically cancelled if bid/ask are above/below the order rate.
 * **Retain GUI access on startup errors**: Automatically stop Gunbot core when ran without pairs. If startup errors occur, a Telegram notification is sent and core gets stopped.
 * **Dark theme for the settings page**: the settings page in the GUI is now dark.
 * **Renamed executables**: the main executable files got renamed to be more coherent between operating systems.
@@ -38,12 +38,10 @@ Many critical issues were already patched in the bugfix releases for v11. Notabl
 * Fix support for TUSD as base currency at Binance.
 * Fix libraries for Raspberry Pi support.
 * Reduced data/resource usage for the GUI.
-*  [Workaround](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts) for an issue with Bitfinex not accepting close orders.
+* [Workaround](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts) for an issue with Bitfinex not accepting close orders.
 * Fix an issue that reset DU count after a partial sell order.
 * Fix an issue with marging trading through TV add-on on Huobi.
 * Various smaller fixes.
-
-
 
 ## **Upgrading**
 
