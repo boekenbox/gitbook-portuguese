@@ -1,4 +1,4 @@
-# Protections
+# Proteções
 
 Trading methods have a few common protections:
 

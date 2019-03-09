@@ -1,4 +1,4 @@
-# Bot settings
+# Configurações do Bot
 
 The bot settings menu lets you change global settings that affect all trading pairs.
 

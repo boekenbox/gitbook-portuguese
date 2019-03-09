@@ -1,4 +1,4 @@
-# Regular strategies \(spot trading\)
+# Estratégias regulares \(spot trading\)
 
 {% hint style="info" %}
 In this section you will find detailed information about all available strategy options for spot trading.

@@ -1,4 +1,4 @@
-# GUI settings
+# Configurações da GUI
 
 ## GUI settings
 

@@ -1,4 +1,4 @@
-# Balance settings
+# Configurações de Saldo
 
 Balance settings define important options like how much Gunbot is allowed to invest per trade.
 

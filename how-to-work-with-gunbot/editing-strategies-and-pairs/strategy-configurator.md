@@ -1,4 +1,4 @@
-# Strategy configurator
+# Configurador de estratégias
 
 A strategy in Gunbot is a collection of settings that can be assigned to one or more trading pairs. These pairs will then trade according to the assigned settings.
 

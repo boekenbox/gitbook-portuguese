@@ -29,13 +29,13 @@
     * [Criando chaves API](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
 * [Notificações do Telegram](setup-and-general-settings/telegram-notifications.md)
 * [Outras configurações globais](setup-and-general-settings/other-global-settings/README.md)
-  * [Bot settings](setup-and-general-settings/other-global-settings/bot-settings.md)
-  * [GUI settings](setup-and-general-settings/other-global-settings/gui-settings.md)
+  * [Configurações do Bot](setup-and-general-settings/other-global-settings/bot-settings.md)
+  * [Configurações da GUI](setup-and-general-settings/other-global-settings/gui-settings.md)
   * [Websockets](setup-and-general-settings/other-global-settings/websockets.md)
 
 ## Como trabalhar com o Gunbot
 
-* [Learning the basics](how-to-work-with-gunbot/basic-workings/README.md)
+* [Aprendendo o básico](how-to-work-with-gunbot/basic-workings/README.md)
   * [Lógica de Trading](how-to-work-with-gunbot/basic-workings/trading-logic.md)
   * [Configurações importantes](how-to-work-with-gunbot/basic-workings/balance-settings.md)
   * [Tipos de Ordem](how-to-work-with-gunbot/basic-workings/order-types.md)
@@ -43,16 +43,16 @@
   * [Trailing](how-to-work-with-gunbot/basic-workings/trailing.md)
   * [ROE trailing](how-to-work-with-gunbot/basic-workings/roe-trailing.md)
 * [Editando estratégias e pares](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
-  * [Strategy configurator](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
+  * [Configurador de estratégias](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
   * [Pares de Trade](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
 * [Monitoramento](how-to-work-with-gunbot/monitoring.md)
 
-## Trading strategy options
+## Opções de estratpegias de trading
 
 * [Sobre as estratégias do Gunbot](trading-strategy-options/about-gunbot-strategies/README.md)
   * [Métodos de Trade](trading-strategy-options/about-gunbot-strategies/trading-methods.md)
-  * [Protections](trading-strategy-options/about-gunbot-strategies/protections.md)
-* [Regular strategies \(spot trading\)](trading-strategy-options/regular-strategies-spot-trading/README.md)
+  * [Proteções](trading-strategy-options/about-gunbot-strategies/protections.md)
+* [Estratégias regulares \(spot trading\)](trading-strategy-options/regular-strategies-spot-trading/README.md)
   * [ADX](trading-strategy-options/regular-strategies-spot-trading/adx.md)
   * [ATRTS](trading-strategy-options/regular-strategies-spot-trading/atrts.md)
   * [Bollinger Bands](trading-strategy-options/regular-strategies-spot-trading/bollinger-bands.md)
@@ -68,7 +68,7 @@
   * [SMA cross](trading-strategy-options/regular-strategies-spot-trading/sma-cross.md)
   * [Tssl \(trailing stop / stop limit\)](trading-strategy-options/regular-strategies-spot-trading/tssl-trailing-stop-stop-limit.md)
   * [Time series analysis](trading-strategy-options/regular-strategies-spot-trading/time-series-analysis.md)
-* [Margin trading strategies](trading-strategy-options/margin-trading-strategies/README.md)
+* [Estratégias de Margin Trading](trading-strategy-options/margin-trading-strategies/README.md)
   * [ADX](trading-strategy-options/margin-trading-strategies/adx.md)
   * [ATRTS](trading-strategy-options/margin-trading-strategies/atrts.md)
   * [Bollinger Bands](trading-strategy-options/margin-trading-strategies/bollinger-bands.md)
@@ -83,7 +83,7 @@
   * [SMA cross](trading-strategy-options/margin-trading-strategies/sma-cross.md)
   * [Tssl \(trailing stop / stop limit\)](trading-strategy-options/margin-trading-strategies/tssl-trailing-stop-stop-limit.md)
   * [Time series analysis](trading-strategy-options/margin-trading-strategies/time-series-analysis.md)
-* [Balance settings](trading-strategy-options/balance-settings.md)
+* [Configurações de Saldo](trading-strategy-options/balance-settings.md)
 * [Indicadores de Confirmação](trading-strategy-options/confirming-indicators.md)
 * [Dollar Cost Avg \(DCA\)](trading-strategy-options/dollar-cost-avg-dca.md)
 * [Reversal Trading \(RT\)](trading-strategy-options/reversal-trading-rt.md)
