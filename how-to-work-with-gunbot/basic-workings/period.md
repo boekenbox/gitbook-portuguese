@@ -1,4 +1,4 @@
-# Period
+# Período
 
 ## Choosing the right period
 

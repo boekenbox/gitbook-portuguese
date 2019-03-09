@@ -1,4 +1,4 @@
-# Misc settings
+# Configurações Misc
 
 ### Miscellaneous settings parameters
 

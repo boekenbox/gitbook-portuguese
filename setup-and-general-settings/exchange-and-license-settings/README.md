@@ -1,4 +1,4 @@
-# Exchange & license settings
+# Configurações de Exchange & Licença
 
 {% page-ref page="gunthy-wallet/" %}
 

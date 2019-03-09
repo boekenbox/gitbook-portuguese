@@ -1,4 +1,4 @@
-# Editing strategies and pairs
+# Editando estratégias e pares
 
 You can completely configure your bot from the settings page.
 

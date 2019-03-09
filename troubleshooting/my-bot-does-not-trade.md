@@ -1,4 +1,4 @@
-# Bot does not trade
+# O bot não faz trades
 
 {% hint style="info" %}
 A common question among new users is "why does my bot not trade?

@@ -2,55 +2,55 @@
 
 * [Bem vindo ao Wiki em português do Gunbot!](README.md)
 
-## About
+## Sobre
 
-* [What's new in v12?](about/whats-new-v12.md)
-* [How to purchase Gunbot](about/resellers.md)
+* [O que há de novo no v12?](about/whats-new-v12.md)
+* [Como comprar o Gunbot](about/resellers.md)
 * [Exchanges suportadas](about/supported-exchanges.md)
-* [System requirements](about/system-requirements.md)
+* [Requisitos do Sistema](about/system-requirements.md)
 
-## Setup & general settings
+## Setup & Configurações Gerais
 
 * [Instalação & início](setup-and-general-settings/installation/README.md)
-  * [Download software](setup-and-general-settings/installation/download.md)
-  * [Windows installation](setup-and-general-settings/installation/windows.md)
+  * [Download do software](setup-and-general-settings/installation/download.md)
+  * [Instalação no Windows](setup-and-general-settings/installation/windows.md)
   * [macOS installation](setup-and-general-settings/installation/macos.md)
   * [Linux installation](setup-and-general-settings/installation/linux.md)
   * [ARM installation](setup-and-general-settings/installation/arm.md)
-  * [How to enable SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
-  * [Running multiple instances](setup-and-general-settings/installation/running-multiple-instances.md)
-  * [Headless mode](setup-and-general-settings/installation/headless-mode.md)
-* [Authentication](setup-and-general-settings/authentication.md)
-* [Exchange & license settings](setup-and-general-settings/exchange-and-license-settings/README.md)
-  * [Register GUNTHY wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
-    * [How to create a wallet](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/how-to-create-a-wallet.md)
-  * [Connect exchange](setup-and-general-settings/exchange-and-license-settings/connect-exchange/README.md)
-    * [Swap exchanges](setup-and-general-settings/exchange-and-license-settings/connect-exchange/api-slots.md)
-    * [Creating API keys](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
-* [Telegram notifications](setup-and-general-settings/telegram-notifications.md)
-* [Other global settings](setup-and-general-settings/other-global-settings/README.md)
+  * [Como habilitar SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
+  * [Rodando múltiplas instâncias](setup-and-general-settings/installation/running-multiple-instances.md)
+  * [Modo Headless \(Sem GUI\)](setup-and-general-settings/installation/headless-mode.md)
+* [Autenticação](setup-and-general-settings/authentication.md)
+* [Configurações de Exchange & Licença](setup-and-general-settings/exchange-and-license-settings/README.md)
+  * [Registrando uma carteira GUNTHY](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/README.md)
+    * [Como criar uma carteira](setup-and-general-settings/exchange-and-license-settings/gunthy-wallet/how-to-create-a-wallet.md)
+  * [Conectar exchange](setup-and-general-settings/exchange-and-license-settings/connect-exchange/README.md)
+    * [Trocar exchanges](setup-and-general-settings/exchange-and-license-settings/connect-exchange/api-slots.md)
+    * [Criando chaves API](setup-and-general-settings/exchange-and-license-settings/connect-exchange/creating-api-keys.md)
+* [Notificações do Telegram](setup-and-general-settings/telegram-notifications.md)
+* [Outras configurações globais](setup-and-general-settings/other-global-settings/README.md)
   * [Bot settings](setup-and-general-settings/other-global-settings/bot-settings.md)
   * [GUI settings](setup-and-general-settings/other-global-settings/gui-settings.md)
   * [Websockets](setup-and-general-settings/other-global-settings/websockets.md)
 
-## How to work with Gunbot
+## Como trabalhar com o Gunbot
 
 * [Learning the basics](how-to-work-with-gunbot/basic-workings/README.md)
-  * [Trading logic](how-to-work-with-gunbot/basic-workings/trading-logic.md)
-  * [Important settings](how-to-work-with-gunbot/basic-workings/balance-settings.md)
-  * [Order types](how-to-work-with-gunbot/basic-workings/order-types.md)
-  * [Period](how-to-work-with-gunbot/basic-workings/period.md)
+  * [Lógica de Trading](how-to-work-with-gunbot/basic-workings/trading-logic.md)
+  * [Configurações importantes](how-to-work-with-gunbot/basic-workings/balance-settings.md)
+  * [Tipos de Ordem](how-to-work-with-gunbot/basic-workings/order-types.md)
+  * [Período](how-to-work-with-gunbot/basic-workings/period.md)
   * [Trailing](how-to-work-with-gunbot/basic-workings/trailing.md)
   * [ROE trailing](how-to-work-with-gunbot/basic-workings/roe-trailing.md)
-* [Editing strategies and pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
+* [Editando estratégias e pares](how-to-work-with-gunbot/editing-strategies-and-pairs/README.md)
   * [Strategy configurator](how-to-work-with-gunbot/editing-strategies-and-pairs/strategy-configurator.md)
-  * [Trading pairs](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
-* [Monitoring](how-to-work-with-gunbot/monitoring.md)
+  * [Pares de Trade](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
+* [Monitoramento](how-to-work-with-gunbot/monitoring.md)
 
 ## Trading strategy options
 
-* [About Gunbot strategies](trading-strategy-options/about-gunbot-strategies/README.md)
-  * [Trading methods](trading-strategy-options/about-gunbot-strategies/trading-methods.md)
+* [Sobre as estratégias do Gunbot](trading-strategy-options/about-gunbot-strategies/README.md)
+  * [Métodos de Trade](trading-strategy-options/about-gunbot-strategies/trading-methods.md)
   * [Protections](trading-strategy-options/about-gunbot-strategies/protections.md)
 * [Regular strategies \(spot trading\)](trading-strategy-options/regular-strategies-spot-trading/README.md)
   * [ADX](trading-strategy-options/regular-strategies-spot-trading/adx.md)
@@ -84,11 +84,11 @@
   * [Tssl \(trailing stop / stop limit\)](trading-strategy-options/margin-trading-strategies/tssl-trailing-stop-stop-limit.md)
   * [Time series analysis](trading-strategy-options/margin-trading-strategies/time-series-analysis.md)
 * [Balance settings](trading-strategy-options/balance-settings.md)
-* [Confirming indicators](trading-strategy-options/confirming-indicators.md)
+* [Indicadores de Confirmação](trading-strategy-options/confirming-indicators.md)
 * [Dollar Cost Avg \(DCA\)](trading-strategy-options/dollar-cost-avg-dca.md)
-* [Reversal trading \(RT\)](trading-strategy-options/reversal-trading-rt.md)
+* [Reversal Trading \(RT\)](trading-strategy-options/reversal-trading-rt.md)
 * [TrailMe](trading-strategy-options/trailme.md)
-* [Misc settings](trading-strategy-options/misc-settings.md)
+* [Configurações Misc](trading-strategy-options/misc-settings.md)
 
 ## Add-ons
 
@@ -101,13 +101,13 @@
 
 * [Backups](various/backups.md)
 * [Logs](various/logs.md)
-* [Handling bags](various/handling-bags.md)
-* [Acronyms](various/acronyms.md)
-* [Wiki feedback](https://docs.google.com/forms/d/1QwufBGpCVZ24J6Er9WRxzM-0MQhusY9dLJHaOvbem3c/)
+* [Lidando com Bags](various/handling-bags.md)
+* [Acrônimos](various/acronyms.md)
+* [Feedback sobre o Wiki](https://docs.google.com/forms/d/1QwufBGpCVZ24J6Er9WRxzM-0MQhusY9dLJHaOvbem3c/)
 
 ## Troubleshooting
 
-* [Critical errors](troubleshooting/critical-errors.md)
-* [Bot does not trade](troubleshooting/my-bot-does-not-trade.md)
+* [Erros críticos](troubleshooting/critical-errors.md)
+* [O bot não faz trades](troubleshooting/my-bot-does-not-trade.md)
 * [Reset password / 2FA](troubleshooting/reset-password-2fa.md)
 

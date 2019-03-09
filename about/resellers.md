@@ -1,4 +1,4 @@
-# How to purchase Gunbot
+# Como comprar o Gunbot
 
 Gunbot is sold through a number of approved resellers, who have their own support channels to make sure you are helped when you have questions about using the software.
 

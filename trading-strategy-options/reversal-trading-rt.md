@@ -1,4 +1,4 @@
-# Reversal trading \(RT\)
+# Reversal Trading \(RT\)
 
 Reversal trading \(RT\) is a Gunbot technique to keep on trading profitably when prices move downwards after an asset has been purchased.
 

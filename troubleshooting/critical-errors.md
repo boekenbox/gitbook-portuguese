@@ -1,4 +1,4 @@
-# Critical errors
+# Erros críticos
 
 When there is a problem that might need attention, Gunbot usually shows an error notification in the GUI. Some errors are only visible in the console window running Gunbot.
 

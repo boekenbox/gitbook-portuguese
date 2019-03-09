@@ -4,7 +4,7 @@ description: >-
   v12.
 ---
 
-# What's new in v12?
+# O que há de novo no v12?
 
 ## New features / changes
 

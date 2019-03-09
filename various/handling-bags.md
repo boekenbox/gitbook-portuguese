@@ -1,4 +1,4 @@
-# Handling bags
+# Lidando com Bags
 
 Every trader will have to deal with the situation that sometimes after a buy order has been successfully placed, the price drops and you're stuck with assets that lost value and cannot be sold for profit soon. Such assets block further trade activity for that pair, and are commonly called bags.
 

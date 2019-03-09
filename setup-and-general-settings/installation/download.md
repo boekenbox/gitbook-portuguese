@@ -1,4 +1,4 @@
-# Download software
+# Download do software
 
 {% hint style="info" %}
 **Tip:** Bookmark the download link for your Gunbot edition, this is where you get updates.

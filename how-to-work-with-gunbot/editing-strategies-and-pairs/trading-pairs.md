@@ -1,4 +1,4 @@
-# Trading pairs
+# Pares de Trade
 
 To configure which trading pairs Gunbot should trade, go to **Settings &gt; Trading &gt; Trading Pairs**.
 

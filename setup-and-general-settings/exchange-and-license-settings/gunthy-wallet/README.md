@@ -1,4 +1,4 @@
-# Register GUNTHY wallet
+# Registrando uma carteira GUNTHY
 
 Gunbot uses a blockchain based license validation system. It uses our own ERC-20 utility token called "GUNTHY". Using this system, you can manage your own API keys and change them anytime, or even sell your license to third party.
 

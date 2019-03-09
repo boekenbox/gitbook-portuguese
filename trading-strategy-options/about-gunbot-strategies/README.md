@@ -1,4 +1,4 @@
-# About Gunbot strategies
+# Sobre as estratégias do Gunbot
 
 {% page-ref page="trading-methods.md" %}
 

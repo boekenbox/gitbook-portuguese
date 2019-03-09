@@ -1,4 +1,4 @@
-# Telegram notifications
+# Notificações do Telegram
 
 Gunbot can send notifications on Telegram for every trade it places.
 

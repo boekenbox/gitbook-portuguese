@@ -1,4 +1,4 @@
-# Other global settings
+# Outras configurações globais
 
 {% page-ref page="bot-settings.md" %}
 

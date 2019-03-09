@@ -1,4 +1,4 @@
-# Swap exchanges
+# Trocar exchanges
 
 All Gunbot license types can use an API slot system, this allows you to switch between different supported exchange accounts at no extra costs.
 

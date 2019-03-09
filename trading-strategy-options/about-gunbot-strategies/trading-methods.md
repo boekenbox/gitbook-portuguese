@@ -1,4 +1,4 @@
-# Trading methods
+# Métodos de Trade
 
 A strategy in Gunbot is a collection of settings that can be assigned to one or more trading pairs. These pairs will then trade according to the assigned settings. The most important factors of a strategy are the buy and sell methods, these define the main logic for buy and sell orders.
 

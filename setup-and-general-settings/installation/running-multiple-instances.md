@@ -1,4 +1,4 @@
-# Running multiple instances
+# Rodando múltiplas instâncias
 
 To run multiple instances of Gunbot, just make a copy of its folder for each instance and make sure the following settings parameters are unique for each instance:
 

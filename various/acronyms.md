@@ -1,4 +1,4 @@
-# Acronyms
+# Acrônimos
 
 When people talk about Gunbot, they use a lot of Acronyms and other strange terms because it's easier than repeating the full parameter names over and over again.
 

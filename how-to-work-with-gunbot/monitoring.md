@@ -1,4 +1,4 @@
-# Monitoring
+# Monitoramento
 
 Monitoring and evaluating your trades is an important aspect of bot trading. Gunbot makes it easy to visualize the trades it makes, this will help you to keep improving your trading strategies.
 

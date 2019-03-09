@@ -1,4 +1,4 @@
-# Connect exchange
+# Conectar exchange
 
 To be able to trade, you need to enter the exchange [API key](creating-api-keys.md) and secret.
 

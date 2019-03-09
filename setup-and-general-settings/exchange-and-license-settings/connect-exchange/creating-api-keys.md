@@ -1,4 +1,4 @@
-# Creating API keys
+# Criando chaves API
 
 To use Gunbot you need to create an API key at your exchange.
 

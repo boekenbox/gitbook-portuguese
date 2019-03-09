@@ -1,4 +1,4 @@
-# System requirements
+# Requisitos do Sistema
 
 ## Supported platforms
 

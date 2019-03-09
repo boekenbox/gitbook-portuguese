@@ -1,4 +1,4 @@
-# Confirming indicators
+# Indicadores de Confirmação
 
 To further restrict trading criteria for your strategy, you can use a number of confirming indicators for regular buy and sell orders. This page describes all settings options available for confirming indicators.
 

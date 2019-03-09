@@ -1,4 +1,4 @@
-# How to enable SSL/TLS
+# Como habilitar SSL/TLS
 
 ## Run the GUI on https with a self-signed certificate
 

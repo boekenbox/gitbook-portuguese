@@ -1,4 +1,4 @@
-# Order types
+# Tipos de Ordem
 
 Throughout this wiki you will notice that some settings apply to specific "order types". The table below explains these order types.
 

@@ -1,4 +1,4 @@
-# Trading logic
+# Lógica de Trading
 
 ## Gunbot does what you tell it to do
 

@@ -1,4 +1,6 @@
-# Headless mode
+# Modo Headless \(Sem GUI\)
+
+
 
 {% hint style="info" %}
 This article is meant for power users who want to run Gunbot without using the GUI.
