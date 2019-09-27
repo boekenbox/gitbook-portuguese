@@ -4,27 +4,33 @@ This page describes how margin trading on Bitmex works with the Bollinger Bands 
 
 ## How to work with this strategy
 
-The expected behavior for margin trading with Gunbot is that it will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
+{% hint style="info" %}
+**Expected behavior for margin trading**
+
+Gunbot will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
 
 Please don't manually add to or reduce positions opened by Gunbot, unless you stop running Gunbot on this trading pair until you've closed this position.
+{% endhint %}
+
+
 
 The examples below show how the basic triggers for `BBTA` work. Additionally, you can use confirming indicators and settings like ROE trailing.
 
 ### Long
 
-![](https://user-images.githubusercontent.com/2372008/53252180-9dc30280-36be-11e9-8eb2-a5dcca61f1ad.png)
+![](../../.gitbook/assets/image.png)
 
 * A long position is opened when the ask price crosses over `LOW_BB`. In the example above `LOW_BB` would be set to 0, which represents the actual lower Bollinger Band. With different values you could set a target above \(positive value\) or below \(negative value\) the lower band.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.
-* A position is closed at loss when `STOP_LIMIT` is reached. This is a percentage from the entry point in the opposite direction of your profit target, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `STOP_LIMIT`: 1.
+* A position is closed at loss when `STOP_BUY` is reached. This is a percentage from the entry point in the opposite direction of your profit target, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `STOP_BUY`: 1.
 
 ### Short
 
-![](https://user-images.githubusercontent.com/2372008/53249924-93523a00-36b9-11e9-82dd-c052533d27f9.png)
+![](../../.gitbook/assets/image%20%2814%29.png)
 
 * A short position is opened when the bid price crosses below `HIGH_BB`. In the example above `HIGH_BB` would be set to 0, which represents the actual upper Bollinger Band. With different values you could set a target below \(positive value\) or above \(negative value\) the upper band.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.
-* A position is closed at loss when `STOP_LIMIT` is reached. This is a percentage from the entry point in the opposite direction of your profit target, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `STOP_LIMIT`: 1.
+* A position is closed at loss when `STOP_SELL` is reached. This is a percentage from the entry point in the opposite direction of your profit target, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `STOP_SELL`: 1.
 
 ## Strategy parameters
 
@@ -438,7 +444,7 @@ This sets the target for buying. Negative values are allowed.
 
 The bot will buy when price hits the set percentage from the lower Bollinger Band and the price is below the entry point as defined by `BUY_LEVEL`.
 
-When set to 0, the lower Bollinger Band is the target. When set to 30, the target is 30% above the lower Bollinger Band - the upper band is at 100% from the lower band.
+When set to 0, the lower Bollinger Band is the target. When set to 30, the target is 30% above the lower Bollinger Band - the upper band is at 100% from the lower band. Negative values are allowed.
 {% endtab %}
 
 {% tab title="Values" %}
@@ -472,7 +478,7 @@ This sets the target for selling. Negative values are allowed.
 
 The bot will sell when price hits the set percentage from the upper Bollinger Band and `GAIN` is reached.
 
-When set to 0, the upper Bollinger Band is the target \(well, almost\). When set to 30, the target is 30% under the upper Bollinger Band - the lower band is at 100% from the upper band.
+When set to 0, the upper Bollinger Band is the target \(well, almost\). When set to 30, the target is 30% under the upper Bollinger Band - the lower band is at 100% from the upper band. Negative values are allowed.
 {% endtab %}
 
 {% tab title="Values" %}

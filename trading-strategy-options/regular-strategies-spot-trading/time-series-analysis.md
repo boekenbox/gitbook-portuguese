@@ -254,7 +254,7 @@ It works by trailing prices upwards between the break-even point and the strateg
 
 Sells at minimal loss are possible when using `TAKE_PROFIT`, acting as a sort of mini stop loss.
 
-This option should not be used together with reversal trading and `DOUBLE_CHECK_GAIN`
+This option should not be used together with reversal trading or `DOUBLE_CHECK_GAIN`
 {% endtab %}
 
 {% tab title="Values" %}
@@ -450,8 +450,6 @@ The following parameters in `config.js` have no function for this strategy and a
 
 | Parameter | Description |
 | :--- | :--- |
-| `ATRX` | Placeholder. |
-| `ATR_PERIOD` | Placeholder. |
 | `BUYLVL1` | Placeholder. |
 | `BUYLVL2` | Placeholder. |
 | `BUYLVL3` | Placeholder. |

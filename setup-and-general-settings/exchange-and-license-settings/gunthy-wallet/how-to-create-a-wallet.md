@@ -1,36 +1,28 @@
+---
+description: Steps to create a compatible wallet to hold Gunthy tokens.
+---
+
 # How to create a wallet
 
-To create a GUNTHY wallet, you must add a custom token to an Ethereum wallet and enter this contract address: `0x3684b581db1f94b721ee0022624329feb16ab653`.
+To create a GUNTHY wallet, you must add a custom token to an Ethereum wallet and enter this contract address: `0x3684b581db1f94b721ee0022624329feb16ab653`. 
+
+It's possible to use an ERC-20 compatible wallet without adding the contract address, but then you usually won't be able to see the tokens in your wallet software.
 
 Below you'll find short descriptions on how to do that with a few of the most used Ethereum wallet clients.
 
 **If you already have an Ethereum wallet, only the steps for adding a custom contract apply.**
 
-## Ethereum Wallet
+{% hint style="warning" %}
+**Do not use an exchange wallet.** 
 
-**Step 1: create an account**
-
-Click **Add Account** and follow all the security advice given.
-
-![](https://user-images.githubusercontent.com/2372008/51180588-eff75380-18c8-11e9-81b5-468596b2026c.png)
-
-**Step 2: add custom token**
-
-Go to **Contracts** and click **Watch Token** to add a new token.
-
-![](https://user-images.githubusercontent.com/2372008/51180761-97748600-18c9-11e9-9f01-8212e6054467.png)
-
-Enter the GUNTHY token contract address and confirm.
-
-![](https://user-images.githubusercontent.com/2372008/51180811-c5f26100-18c9-11e9-80b3-59805a60f43a.png)
-
-**Step 3: copy address**
-
-Copy the account address using the **Copy address** button. Use this address in Gunbot.
-
-![](https://user-images.githubusercontent.com/2372008/51181359-406fb080-18cb-11e9-8b5d-9bd307180660.png)
+Gunbot won't run when you have your tokens stored on an exchange.
+{% endhint %}
 
 ## MyEtherWallet
+
+{% hint style="success" %}
+[https://www.myetherwallet.com/](https://www.myetherwallet.com/)
+{% endhint %}
 
 **Step 1: create a wallet**
 
@@ -54,6 +46,10 @@ Copy the account address shown on top of the page. Use this address in Gunbot.
 
 ## Metamask
 
+{% hint style="success" %}
+[https://metamask.io/](https://metamask.io/)
+{% endhint %}
+
 **Step 1: install browser add-on and create a wallet**
 
 Follow the steps shown to be able to use Metamask. Create a new wallet and follow all the security advice given.
@@ -76,6 +72,10 @@ Copy the account address shown on top left side of the page. Use this address in
 
 ## MyCrypto
 
+{% hint style="success" %}
+[https://mycrypto.com/](https://mycrypto.com/)
+{% endhint %}
+
 **Step 1: create a wallet**
 
 Follow the wizard and all the security advice given.
@@ -90,7 +90,7 @@ Create a new wallet and follow all the security advice given.
 
 Go to **View & Send** and then to **Token Balances** to add a custom token.
 
-Enter the GUNTHY token contract address and confirm.
+Enter the GUNTHY token contract address and confirm it.
 
 ![](https://user-images.githubusercontent.com/2372008/51182045-30f16700-18cd-11e9-9a33-a6c4b25aee90.png)
 

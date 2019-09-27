@@ -99,6 +99,38 @@ Parameter name in `config.js`: `NBA`
 {% endtab %}
 {% endtabs %}
 
+### Single Buy
+
+{% tabs %}
+{% tab title="Description" %}
+Enable this to restrict `MACD` to placing just a single buy order on the first crossup, then it will go in sell mode.
+
+Useful when you combine `MACD` with a different sell method or use other parameters that prevents sell orders from happening at every crossdown.
+{% endtab %}
+
+{% tab title="Values" %}
+**Values:** true or false
+
+**Default value:** false
+{% endtab %}
+
+{% tab title="Order types" %}
+| Affects | Does not affect |
+| :--- | :--- |
+| Strategy buy | Strategy sell |
+|  | Stop limit |
+|  | Close |
+|  | RT sell |
+|  | DCA buy |
+|  | RT buy |
+|  | RT buyback |
+{% endtab %}
+
+{% tab title="Name" %}
+Parameter name in `config.js`: `SINGLE_BUY`
+{% endtab %}
+{% endtabs %}
+
 ### Take Buy
 
 {% tabs %}
@@ -241,7 +273,7 @@ It works by trailing prices upwards between the break-even point and the strateg
 
 Sells at minimal loss are possible when using `TAKE_PROFIT`, acting as a sort of mini stop loss.
 
-This option should not be used together with reversal trading and `DOUBLE_CHECK_GAIN`
+This option should not be used together with reversal trading or `DOUBLE_CHECK_GAIN`
 {% endtab %}
 
 {% tab title="Values" %}

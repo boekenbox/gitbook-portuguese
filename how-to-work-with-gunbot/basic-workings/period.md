@@ -1,4 +1,16 @@
+---
+description: Which candle stick periods are supported.
+---
+
 # Period
+
+## Supported period values
+
+Gunbot supports different values for `PERIOD` for each exchange.
+
+Currently the following periods are supported:
+
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 ## Choosing the right period
 
@@ -10,15 +22,7 @@ Using shorter candlesticks results in more price movement around EMA, this can b
 
 In the image below, you can see the effect on EMA \(the green and red lines\) when using different candlestick sizes, while keeping other variables the same.
 
-![ema](https://user-images.githubusercontent.com/2372008/32069470-900b0cd0-ba89-11e7-93f1-fbdfa80b3001.png)
+![Same EMA values, different periods.](https://user-images.githubusercontent.com/2372008/32069470-900b0cd0-ba89-11e7-93f1-fbdfa80b3001.png)
 
 > tl;dr: Set `PERIOD` low to trade on short trends, set it higher to trade on longer trends.
-
-## Supported period values
-
-Gunbot supports different values for `PERIOD` for each exchange.
-
-Currently the following periods are supported:
-
-![](../../.gitbook/assets/image-7.png)
 

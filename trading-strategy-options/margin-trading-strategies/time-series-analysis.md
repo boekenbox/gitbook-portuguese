@@ -4,9 +4,13 @@ This page describes how margin trading on Bitmex works with the TSA strategy. Th
 
 ## How to work with this strategy
 
-The expected behavior for margin trading with Gunbot is that it will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
+{% hint style="info" %}
+**Expected behavior for margin trading**
+
+Gunbot will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
 
 Please don't manually add to or reduce positions opened by Gunbot, unless you stop running Gunbot on this trading pair until you've closed this position.
+{% endhint %}
 
 ### Long / Buy
 
@@ -22,7 +26,7 @@ A position is closed when the desired `ROE` is reached.
 
 ### Stop
 
-A position is closed at loss when `STOP_LIMIT` is reached.
+A position is closed at loss when `STOP_BUY` or `STOP_SELL` is reached.
 
 ## Strategy parameters
 

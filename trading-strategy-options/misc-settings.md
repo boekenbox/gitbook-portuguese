@@ -1,3 +1,7 @@
+---
+description: Various extra strategy options.
+---
+
 # Misc settings
 
 ### Miscellaneous settings parameters
@@ -14,7 +18,11 @@ After a stop limit sell order has been placed, the bot will go into buying mode 
 
 Setting a stop limit at 60 would make sure that all holdings for a coin are sold when 60% value is lost, compared to the averaged bought price. E.g. average bought price is 100, stop limit is executed at 40 and all assets are sold.
 
-When in a short margin position with a stop set to 60 and an entry at 100, the stop would hit when price reaches 160.
+{% hint style="info" %}
+On margin exchanges, the stop limit is set as a ROE value. Setting it to 1 will lead to the stop limit triggering when ROE reaches -1. 
+
+It's recommended to use STOP\_BUY / STOP\_SELL instead, as these are placed at the same time as the position is opened.
+{% endhint %}
 {% endtab %}
 
 {% tab title="Values" %}
@@ -80,7 +88,7 @@ When set to true, all quote will be sold at market value as soon as possible. Th
 
 You should only enable this when you want to sell your current holdings immediately.
 
-For margin trading, this setting will delete any open order and close any position as soon as possible. Pairs are not automatically disabled afterwards.
+For margin trading, this setting will delete any open orders and close any position as soon as possible. Pairs are not automatically disabled afterwards.
 {% endtab %}
 
 {% tab title="Values" %}
@@ -110,7 +118,7 @@ Parameter name in `config.js`: `PANIC_SELL`
 
 {% tabs %}
 {% tab title="Description" %}
-Sets a timeout between two trades for a single pair, in this time no trades will be placed. Affects all trade types except stop limit orders.
+Sets a timeout between two trades for a single pair, in this time no trades will be placed. 
 {% endtab %}
 
 {% tab title="Values" %}
@@ -132,7 +140,7 @@ Sets a timeout between two trades for a single pair, in this time no trades will
 {% endtab %}
 
 {% tab title="Name" %}
-Parameter name in `config.js`: `PANIC_SELL`
+Parameter name in `config.js`: `TRADES_TIMEOUT`
 {% endtab %}
 {% endtabs %}
 
@@ -176,9 +184,9 @@ Parameter name in `config.js`: `COUNT_SELL`
 
 {% tabs %}
 {% tab title="Description" %}
-Bitmex: When set to true, limit orders will placed as post only orders. If the order can be \(partially\) filled immediately, it will get cancelled by Bitmex. Using `PRE_ORDER` you can configure how far from bid/ask the order gets placed.
+**Bitmex:** When set to true, limit orders will placed as post only orders. If the order can be \(partially\) filled immediately, it will get cancelled by Bitmex. Using `PRE_ORDER` you can configure how far from bid/ask the order gets placed, you must use a negative value for `PRE_ORDER_GAP` for post only orders.
 
-Other exchanges: When set to true, limit buy orders are placed at bid, limit sell orders are placed at ask. This increases the likelyhood that the trade is executed with maker fees.
+**Other exchanges:** When set to true, limit buy orders are placed at bid, limit sell orders are placed at ask. This increases the likelyhood that the trade is executed with maker fees.
 {% endtab %}
 
 {% tab title="Values" %}
@@ -223,6 +231,41 @@ Use [https://currentmillis.com/](https://currentmillis.com/) to convert human re
 
 {% tab title="Name" %}
 Parameter name in `config.js`: `IGNORE_TRADES_BEFORE`
+{% endtab %}
+{% endtabs %}
+
+### Bought price
+
+{% tabs %}
+{% tab title="Description" %}
+Exchanges often don't provide order information anymore on trades that happened longer ago. This parameter exists to manually specify a reference price per unit that Gunbot should consider when selling an asset for which no bought price is provided by the exchange.
+
+This parameter should only be used as an override. 
+
+The override is only valid when no bought price can be retrieved from the exchange. In case you want to forcefully override an available bought price, you can apply `IGNORE_TRADES_BEFORE` and remove the pairs state json file after doing so.
+
+{% hint style="info" %}
+This parameter is irrelevant for trading at Bitmex.
+{% endhint %}
+{% endtab %}
+
+{% tab title="Values" %}
+**Values:** numerical, represents a price per unit in base currency.
+
+**Default value:** n/a
+{% endtab %}
+
+{% tab title="Order types" %}
+| Affects | Does not affect |
+| :--- | :--- |
+| Strategy sell | RT buy |
+| Stop limit | RT buyback |
+| DCA buy | Close |
+| RT sell |  |
+{% endtab %}
+
+{% tab title="Name" %}
+Parameter name in `config.js`: `MAKER_FEES`
 {% endtab %}
 {% endtabs %}
 
@@ -352,7 +395,7 @@ When set to true, RT\_SELL orders will be placed as market order.
 {% endtab %}
 
 {% tab title="Name" %}
-Parameter name in `config.js`: `MARKET_RTBUY`
+Parameter name in `config.js`: `MARKET_RTSELL`
 {% endtab %}
 {% endtabs %}
 

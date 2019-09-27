@@ -4,9 +4,15 @@ This page describes how margin trading on Bitmex works with the [ichimoku](https
 
 ## How to work with this strategy
 
-The expected behavior for margin trading with Gunbot is that it will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
+{% hint style="info" %}
+**Expected behavior for margin trading**
+
+Gunbot will open one position, either long or short, and close this position when the target is reached. When the stop is hit before profitably closing a trade, Gunbot will place a stop order at loss. After closing a position, Gunbot will again look to open a new long or short position. Gunbot will not add to existing open positions.
 
 Please don't manually add to or reduce positions opened by Gunbot, unless you stop running Gunbot on this trading pair until you've closed this position.
+{% endhint %}
+
+
 
 For this strategy it is recommended to use an additional momentum indicator to confirm long and short entries.
 
@@ -46,7 +52,7 @@ You can configure which of the three items is used for closing a position, with 
 
 A long position is stopped when the current candle crosses under Tenkan-sen, Kijun-sen or Kumo. This means that all of open, close, high and low must be above the selected item.
 
-A short position is stopped when the current candle crosses over Tenkan-sen, Kijun-sen or Kumo. This means that all of open, close, high and low must be under the selected item.
+A short position is stopped when the current candle crosses over Tenkan-sen, Kijun-sen or Kumo. This means that all of open, close, high and low must be over the selected item.
 
 You can configure which of the three items is used for stopping a position, with `TENKAN_STOP`, `KIJUN_STOP` or `KUMO_STOP`. If multiple of these parameters are set to true, the first of which occurs will close the position. Make sure to use different lines for closing and stopping a position.
 
