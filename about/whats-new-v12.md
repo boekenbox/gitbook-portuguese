@@ -38,12 +38,10 @@ Many critical issues were already patched in the bugfix releases for v11. Notabl
 * Fix support for TUSD as base currency at Binance.
 * Fix libraries for Raspberry Pi support.
 * Reduced data/resource usage for the GUI.
-*  [Workaround](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts) for an issue with Bitfinex not accepting close orders.
+* [Workaround](https://github.com/GuntharDeNiro/BTCT/wiki/TradingView#to-close-positions-at-bitfinex-use-the-following-alerts) for an issue with Bitfinex not accepting close orders.
 * Fix an issue that reset DU count after a partial sell order.
 * Fix an issue with marging trading through TV add-on on Huobi.
 * Various smaller fixes.
-
-
 
 ## **Upgrading**
 
