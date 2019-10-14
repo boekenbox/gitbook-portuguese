@@ -1,36 +1,36 @@
 # Table of contents
 
-* [Welcome to the Portuguese Gunbot wiki](README.md)
+* [Bem-vindos ao Wiki em Português do Gunbot](README.md)
 
-## About
+## Acerca <a id="about"></a>
 
-* [What's new?](about/whats-new/README.md)
-  * [New in v12](about/whats-new/new-in-v12.md)
+* [Novidades na v13](about/whats-new/README.md)
+  * [Novidades na v12](about/whats-new/new-in-v12.md)
   * [New in v11](about/whats-new/new-in-v11.md)
   * [New in v10](about/whats-new/new-in-v10.md)
   * [New in v9](about/whats-new/new-in-v9.md)
   * [New in v8](about/whats-new/new-in-v8.md)
   * [New in v7](about/whats-new/new-in-v7.md)
   * [New in v6](about/whats-new/new-in-v6.md)
-* [Supported exchanges](about/supported-exchanges.md)
-* [Purchasing Gunbot](https://github.com/GuntharDeNiro/BTCT/wiki/Resellers)
-* [System requirements](about/system-requirements.md)
+* [Exchanges suportados](about/supported-exchanges.md)
+* [Adquirir Gunbot](https://github.com/GuntharDeNiro/BTCT/wiki/Resellers)
+* [Requisitos de sistema](about/system-requirements.md)
 
-## Setup & general settings
+## Configuração & Definições Gerais <a id="setup-and-general-settings"></a>
 
-* [Installation & startup](setup-and-general-settings/installation/README.md)
-  * [Download software](setup-and-general-settings/installation/download.md)
-  * [Windows installation](setup-and-general-settings/installation/windows.md)
-  * [macOS installation](setup-and-general-settings/installation/macos.md)
-  * [Linux installation](setup-and-general-settings/installation/linux.md)
-  * [ARM installation](setup-and-general-settings/installation/arm.md)
-  * [How to enable SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
-  * [Running multiple instances](setup-and-general-settings/installation/running-multiple-instances.md)
-  * [Headless mode](setup-and-general-settings/installation/headless-mode.md)
-* [Preferences](setup-and-general-settings/preferences/README.md)
-  * [Bot settings](setup-and-general-settings/preferences/bot-settings.md)
-  * [Authentication](setup-and-general-settings/preferences/authentication.md)
-  * [GUI notifications](setup-and-general-settings/preferences/gui-notifications.md)
+* [Instalação & Arranque inicial](setup-and-general-settings/installation/README.md)
+  * [Download do software](setup-and-general-settings/installation/download.md)
+  * [Instalação em Windows](setup-and-general-settings/installation/windows.md)
+  * [Instalação em macOS](setup-and-general-settings/installation/macos.md)
+  * [Instalação em Linux](setup-and-general-settings/installation/linux.md)
+  * [Instalação em ARM](setup-and-general-settings/installation/arm.md)
+  * [Como Activar SSL/TLS](setup-and-general-settings/installation/enable-ssl-tls.md)
+  * [Executar múltiplas instâncias](setup-and-general-settings/installation/running-multiple-instances.md)
+  * [Modo Headless](setup-and-general-settings/installation/headless-mode.md)
+* [Preferências](setup-and-general-settings/preferences/README.md)
+  * [Parâmetros Bot](setup-and-general-settings/preferences/bot-settings.md)
+  * [Autenticação](setup-and-general-settings/preferences/authentication.md)
+  * [Notificações do GUI](setup-and-general-settings/preferences/gui-notifications.md)
   * [Websockets](setup-and-general-settings/preferences/websockets.md)
   * [Telegram notifications](setup-and-general-settings/preferences/telegram-notifications.md)
   * [TradingView](setup-and-general-settings/preferences/tradingview-add-on.md)

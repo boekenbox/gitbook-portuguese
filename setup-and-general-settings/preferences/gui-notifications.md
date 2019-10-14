@@ -1,246 +1,246 @@
 ---
-description: Options for notifications in the browser interface.
+description: Opções para notificações no interface do Browser.
 ---
 
-# GUI notifications
+# Notificações do GUI
 
-## GUI settings
+## Parâmetros do GUI
 
-The GUI Notifications menu lets you change which notifications are shown.
+O menu GUI Notifications permite alterar quais as notificações que são visíveis.
 
-To change them, go to **Settings** &gt; **GUI Notifications**.
+Para alterar, ir a **Settings** &gt; **GUI Notifications**.
 
-![](../../.gitbook/assets/image%20%2810%29.png)
+![](../../.gitbook/assets/image-10.png)
 
-## Settings descriptions
+## Descrição dos parâmetros
 
-Below you'll find detailed descriptions of all available parameters for GUI settings. A few advanced settings are only available in the `config.js` file.
+Abaixo irá encontrar descrições detalhados dos parâmetros disponiveis para o menu bot. Alguns parâmetros avançados apenas estão disponíveis através do ficheiro `config.js` .
 
-### Callback Messages
+### Mensagens de Callback
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to receive callback notifications in the GUI.
+{% tab title="Descrição" %}
+Definir como true para receber notificações callback no GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `callback`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `callback`
 {% endtab %}
 {% endtabs %}
 
-### Error Messages
+### Mensagens de Erro
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to receive error notifications in the GUI.
+{% tab title="Descrição" %}
+Definir como true para receber notificações de erro no GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** true
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `error`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `error`
 {% endtab %}
 {% endtabs %}
 
-### Trade Messages
+### Messagens de Trade
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to receive trade notifications in the GUI.
+{% tab title="Descrição" %}
+Definir como true para receber notificações de trades no GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** true
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `trade`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `trade`
 {% endtab %}
 {% endtabs %}
 
-### Enabled \(GUI\)
+### Activo \(GUI\)
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to false to disable the GUI.
+{% tab title="Descrição" %}
+Definir como false para desactivar o GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** true
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `enabled`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `enabled`
 {% endtab %}
 {% endtabs %}
 
 ### Start
 
 {% tabs %}
-{% tab title="Description" %}
-When set to false, Gunbot starts the GUI \(if enabled\) but does not process pairs until the core is started from the GUI.
+{% tab title="Descrição" %}
+Quando definido como false, o Gunbot inicia o GUI \(Se activado\) mas não inicia o processamento de pares \(ciclos\) até o core ser iniciado através do GUI.
 
-This setting is toggled with the **START BOT CORE** button in the GUI.
+Só é activado após clickarem no botão "**START BOT CORE**" no GUI.
 
-In case you don't want to use the GUI, set this to true.
+Caso não utilize o GUI, definir este parâmetro como true.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `start`
+{% tab title="Nomes" %}
+Nome do parâmetro em `config.js`: `start`
 {% endtab %}
 {% endtabs %}
 
 ### Port \(GUI\)
 
 {% tabs %}
-{% tab title="Description" %}
-The port number for the GUI.
+{% tab title="Descrição" %}
+O número da porta do GUI.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical, represents a port number.
+{% tab title="Valores" %}
+**Valores:** numérico - representa o número da porta.
 
-**Default value:** 5000
+**Valor por defeito:** 5000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `port`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `port`
 {% endtab %}
 {% endtabs %}
 
 ### Https
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to run the GUI via https only.
-
-This requires that you generate a key pair and save these in your Gunbot folder.
+{% tab title="Descrição" %}
+Definir como true para correr o GUI somente via https.  
+  
+Requer uma chave privada e um certificado na pasta do Gunbot.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `https`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `https`
 {% endtab %}
 {% endtabs %}
 
 ### Key
 
 {% tabs %}
-{% tab title="Description" %}
-Defines the filename of your private key used for running the GUI via https.
+{% tab title="Descrição" %}
+Define o nome do ficheiro da chave privada utilizada para correr o GUI via https.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string, represents a filename
+{% tab title="Valores" %}
+**Valores:** texto, representa um ficheiro.
 
-**Default value:** localhost.key
+**Valor por defeito**_**:**_ localhost.key
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `key`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `key`
 {% endtab %}
 {% endtabs %}
 
 ### Cert
 
 {% tabs %}
-{% tab title="Description" %}
-Defines the filename of your certificate / public key used for running the GUI via https.
+{% tab title="Descrição" %}
+Define o nome do ficheiro do certificado / chave pública utilizado para correr o GUI via https.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string, represents a filename
+{% tab title="Valores" %}
+**Valores:** texto, representa um ficheiro.
 
-**Default value:** localhost.cert
+**Valor por defeito:** __localhost.cert
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `cert`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `cert`
 {% endtab %}
 {% endtabs %}
 
 ### Networktraffic
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to show GUI network traffic requests in Gunbot logs.
+{% tab title="Descrição" %}
+Definir como true para visualizar no GUI pedidos de tráfego de rede dos logs do Gunbot.
 
-Can be useful for debug purposes.
+Útil em caso de debug \(verificações ou erros\).
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `networktraffic`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `networktraffic`
 {% endtab %}
 {% endtabs %}
 
 ### Login
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to enable password authentication. The password is setup using the GUI.
+{% tab title="Descrição" %}
+Definir como true para activar a autenticação com password. A password é definida no GUI.
 
-In case you need to reset your password, set this to false.
+Caso necessite de efectuar reset à password, definir como false.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** true
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `login`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `login`
 {% endtab %}
 {% endtabs %}
 
 ### TwoFA
 
 {% tabs %}
-{% tab title="Description" %}
-Set this to true to enable two factor authentication. This is setup using the GUI.
-
-In case you need to reset 2FA, set this to false.
+{% tab title="Descrição" %}
+Definir como true para activar a autenticação com 2 factores \(2FA\). Este setup é feito no GUI.  
+  
+Caso necessite de efectuar reset ao 2FA, definir como false.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `twoFA`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `twoFA`
 {% endtab %}
 {% endtabs %}
 

@@ -1,10 +1,10 @@
 ---
-description: Gunbot currently supports trading at the following exchanges.
+description: Gunbot de momento suporta tranding nos seguintes exchanges.
 ---
 
-# Supported exchanges
+# Exchanges suportados
 
-| Exchange | Name in config | Native strategies | TradingView alerts |
+| Exchange | Nome na config | Estratégia Nativa | Alertas TradingView |
 | :--- | :--- | :--- | :--- |
 | **Binance** | `binance` | Regular | Regular |
 | **Bittrex** | `bittrex` | Regular | Regular |

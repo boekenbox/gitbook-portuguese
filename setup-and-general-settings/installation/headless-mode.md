@@ -1,45 +1,45 @@
 ---
-description: Information about running Gunbot in headless mode.
+description: Informação como executar o Gunbot em modo Headless.
 ---
 
-# Headless mode
+# Modo Headless
 
 {% hint style="info" %}
-This article is meant for power users who want to run Gunbot without using the GUI.
+Este artigo é destinado a Power users que querem executar o Gunbot sem utilizar o GUI.
 
-This is not an exhaustive overview of all available settings, just a quick overview of how to manually work with the config file. Refer to other parts of the wiki for detailed settings descriptions.
+Esta não é uma overview exaustiva de todos os parâmetros disponíveis, mas sim uma rápida overview sobre como trabalhar manualmente com o ficheiro de configuração. Para detalhes e descrições detalhadas sobre os parâmetros, consulte outras áreas deste Wiki.
 {% endhint %}
 
-## Config file system
+## Ficheiro de configuração do sistema
 
-All Gunbot settings are defined in a single file named `config.js`. This is where you set up your exchange API keys, add pairs and define your strategies.
+Todos os parâmetros do Gunbot estão definidos num único ficheiro chamado `config.js`. Aqui é onde se configura as suas chaves de API, adição de pares e definição das suas estratégias, entre outros.
 
-You can refer to the included `config-js-example.txt` file for an example of a config file with properly defined pairs and all needed parameters for adding each exchange. Throughout this wiki you'll find detailed descriptions for every parameter available in the config file.
+Pode consultar o ficheiro  `config-js-example.txt` para ter um exemplo duma configuração com pares definidos correctamente e todos os parâmetros necessários para adicionar um exchange. Ao longo deste Wiki encontrará descrições detalhadas para cada parâmetro disponível no ficheiro de configuração.
 
-When the config file is overwritten while Gunbot is running, the changed settings will be loaded automatically.
+Quando o ficheiro de configuração é copiado por cima \(ao salvar por exemplo\) quando o Gunbot está a correr, as alterações serão carregadas automáticamente.
 
-Make sure that no parameters are removed when setting it up. Make sure the JSON-formatting stays intact. If you are unsure about your config file, you can validate it on [https://jsonlint.com](https://jsonlint.com) \(or a similar JSON validator\).
+Garanta que nenhum parâmetro é removido quando está a configurar o ficheiro. Garanta também que o formato JSON permanece intácto. Se tem dúvidas sobre o seu ficheiro de configuração, pode validá-lo em [https://jsonlint.com](https://jsonlint.com) \(ou num validador JSON do seu agrado\).
 
-The only actions that require using the GUI are:
+As única acções que são necessárias utilizando o GUI são:
 
-* Updating master keys
-* Updating the GUNTHY wallet address
-* Transferring the software license to a third party
+* Actualização de master keys
+* Actualização do endereço da GUNTHY wallet 
+* Transferência da licença de software para terceiros
 
-## Disabling the GUI
+## Desactivando o GUI
 
-To disable the GUI completely, make the following change in the GUI section of `config.js`:
+Para desactivar o GUI completamente, faça a alteração na secção GUI de `config.js`:
 
 ```text
 "GUI": {
         "enabled": false,
 ```
 
-## Connecting exchanges
+## Adicionar exchanges
 
-To connect an exchange, add the relevant settings to the exchange section of `config.js`.
+Para adicionar um exchange, adicionar os parâmetros necessários na secção exchange de`config.js`.
 
-It looks like this:
+Como exemplo:
 
 ```text
 "binance": {
@@ -52,13 +52,14 @@ It looks like this:
         },
 ```
 
-Note that you can use a different API key for trading than the registered key. If you don't use a secondary key, you can just enter the registered key in the `key` parameter.
+De notar que pode usar uma chave de API diferente para trading daquela que se encontra registada.   
+Se não usa uma chave secundária, basta introduzir a chave resgistada no parâmetro `key` .
 
-## Strategies
+## Estratégias
 
-A strategy is defined by giving it a unique name and adding it to the `strategies` section of the config file. This strategy can then be assigned to one or more trading pairs.
+Uma estratégia é definida através de um nome único e adicionada na secção `strategies` do ficheiro de configurações. Esta estratégia pode ser atribuída a um ou mais pares.
 
-It looks like this:
+Como exemplo:
 
 ```text
 "custom-strategy": {
@@ -77,11 +78,13 @@ It looks like this:
         },
 ```
 
-## Defining pairs and overrides
+## Definição de pares e substituições \(overrides\)
 
-In the `pairs` section of the config file you can add one or more pairs inside a block specifying the exchange the pairs will run on.
+Na secção `pairs` do ficheiro de configuração, pode adicionar um ou mais pares dentro dum bloco, especificando o exchange onde os pares vão correr.
 
-Each pair must be assigned an existing strategy, it must be specified if the pair is enabled or not.
+A cada par terá que ter atribuída uma estratégia já existente e terá que ser especificado se o par esta activo ou não.
+
+Como exemplo:
 
 ```text
 "Binance": {
@@ -95,7 +98,7 @@ Each pair must be assigned an existing strategy, it must be specified if the pai
         },
 ```
 
-The override section allows for pair specific modifications to the assigned strategy. Any strategy parameter can be used as an override.
+A secção de overrides permite modificações especificas para cada par, sobre a estratégia atribuída. Qualquer parâmetro de estratégia pode ser utilizado como override.
 
-In the example above the pair will run the SMACROSS strategy, with a `TRADING_LIMIT` different from what is defined in the strategy itself.
+No exemplo acima, o par irá utilizar a estratégia SMACROSS, com um limite de trade \(`TRADING_LIMIT`\) diferente do que está definido na estratégia em si.
 

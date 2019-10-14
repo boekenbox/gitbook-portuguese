@@ -1,36 +1,40 @@
 ---
-description: Instructions to run the Gunbot browser interface over a secure connection.
+description: Instruções para correr o GUI do Gunbot no browser com ligação segura.
 ---
 
-# How to enable SSL/TLS
+# Como Activar SSL/TLS
 
-## Run the GUI on https with a self-signed certificate
+## Executar o GUI em https com um certificado do tipo self-signed
 
-To run the GUI on https, you'll need a certificate. Below are instructions to generate a self-signed certificate on Windows, Mac and Linux.
+Para executar o GUI em https é necessário um certificado. De seguida, as instruções para gerar um certificado do tipo self-signed, para Windows, Mac e Linux.
 
 {% hint style="info" %}
-Certificates from common SSL providers work too. Just make sure to rename the files and change the file extensions to .crt and .key, then place the files in the Gunbot folder.
+Certificados de fabricantes conhecidos de SSL funcionam também. Apenas é necessário garantir que os ficheiros são renomeados e as extensões alteradas para .crt \(certificado\) e .key \(chave privada\) .Posteriormente bastará colocar os ficheiros na pasta do Gunbot.
 {% endhint %}
 
-Make sure to set the `https` parameter in `config.js` to `true` to actually enable https after creating a certificate.
+Garantir que o parâmetro `https` no ficheiro `config.js` está como `true` para habilitar o https após a criação do certificado e a sua cópia para a mesma pasta do Gunbot.
 
-When connecting to the GUI for the first time, you'll probably encounter a browser warning due to the use of a self-signed certificate. Create a permanent exception to not get warned again on the same browser.
+Quando se abre o GUI pela primeira vez, provavelmente encontrará um aviso do browser acerca do certificado devido a este ser do tipo self-signed. Para não voltar a visualizar o aviso no mesmo browser, criar uma excepção permanente.
 
 ### **Windows**
 
-1. [Download](https://slproweb.com/products/Win32OpenSSL.html) and install OpenSSL for windows
-2. Go to the following folder: C:\OpenSSL-Win64\bin\
-3. Right click "openssl" and run as administrator, a cmd window opens
-4. Run the following command: `req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` \(you'll be asked to fill in some details, you can do this or leave the fields blank by hitting enter several times\)
-5. Copy the `localhost.key` and `localhost.crt` from C:\OpenSSL-Win64\bin to your Gunbot folder
+1. [Download](https://slproweb.com/products/Win32OpenSSL.html) e instalar OpenSSL para windows.
+2. Ir para a seguinte pasta: C:\OpenSSL-Win64\bin\
+3. Clickar com o botão direito do rato em  "openssl" e escolher a opção executar como Administrador, uma janela de terminal irá abrir.
+4. Executar o seguinte comando: `req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` \(Serão pedidos vários detalhes para serem preenchidos, pode preencher ou deixar em branco, bastando para tal ir carregando em enter para avançar\)
+5. Copiar `localhost.key` e `localhost.crt` de C:\OpenSSL-Win64\bin para a pasta do Gunbot
 
 ### **Mac**
 
-1. Open a terminal window and navigate to your Gunbot folder
-2. Run the following command `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` and make sure to enter the country code field. The rest can be left blank
+1. Abrir uma janela de terminal e navegar até à pasta do Gunbot
+2. Executar o seguinte comando: `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` e garantir que introduz o campo do código do país \(country code field\). O resto pode ficar em branco.
 
 ### **Linux**
 
-1. Open a terminal window and navigate to your Gunbot folder. Possibly you'll need to install openssl through your package manager first.
-2. Run the following command `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` and make sure to enter the country code field. The rest can be left blank.
+1. Abrir uma janela de terminal e navegar até à pasta do Gunbot. Poderá ter que instalar primeiro o openssl através do package manager do linux.
+2. Executar o seguinte comando: 
+
+   `openssl req -newkey rsa:2048 -nodes -keyout localhost.key -x509 -days 365 -out localhost.crt` 
+
+   e garantir que introduz o campo do código do país \(country code field\). O resto pode ficar em branco.
 

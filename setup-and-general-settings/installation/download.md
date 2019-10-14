@@ -1,14 +1,14 @@
 ---
-description: Up to date download locations for Gunbot.
+description: Localizações actualizadas para download do Gunbot.
 ---
 
-# Download software
+# Download do software
 
 {% hint style="info" %}
-**Tip:** Bookmark the download link for your Gunbot edition, this is where you get updates.
+**Dica:** Faça Bookmark do link de download da sua edição de Gunbot, aqui encontrará os updates.
 {% endhint %}
 
-**Gunbot Standard edition and higher:** [https://github.com/GuntharDeNiro/BTCT/releases](https://github.com/GuntharDeNiro/BTCT/releases)
+**Gunbot Standard edition ou superior:** [https://github.com/GuntharDeNiro/BTCT/releases](https://github.com/GuntharDeNiro/BTCT/releases)
 
 **Gunbot Starter edition:** [https://github.com/GuntharDeNiro/Gunthy/releases/](https://github.com/GuntharDeNiro/Gunthy/releases/)
 

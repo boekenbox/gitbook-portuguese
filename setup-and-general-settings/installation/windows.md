@@ -1,37 +1,37 @@
 ---
-description: Instructions to install Gunbot on a Windows machine.
+description: Instrucões para instalar Gunbot numa máquina Windows.
 ---
 
-# Windows installation
+# Instalação em Windows
 
-## Instructions
+## Instrucões
 
-1. Unpack the release .zip file to a new folder
-2. Start running Gunbot by double clicking **gunthy-win.exe**
-3. Open [localhost:5000](http://localhost:5000) in a browser on the same system to access the Gunbot GUI \(modern browsers recommended, preferably Chrome or Firefox\)
-4. Make sure to enter your [registered ERC-20 wallet](../exchange-and-license-settings/gunthy-wallet/) \("Gunthy wallet"\) and your [registered API key](../exchange-and-license-settings/connect-exchange/) in Gunbot before starting the bot core for the first time.
+1. Descompactar o ficheiro .zip da release para uma pasta nova
+2. Iniciar Gunbot com duplo clique em **gunthy-win.exe**
+3. Abrir [localhost:5000](http://localhost:5000) no browser do mesmo sistema para aceder ao GUI do Gunbot \(Browsers modernos são recomendados, preferencialmente Chrome ou Firefox\)
+4. Ter atenção para introduzir  [a sua carteira ERC-20 registada](../exchange-and-license-settings/gunthy-wallet/) \("Gunthy wallet"\) e a sua [chave API registada](../exchange-and-license-settings/connect-exchange/) no Gunbot antes de iniciar o bot core pela primeira vez.
 
 {% hint style="info" %}
-Depending on your systems settings, you may need to add a firewall rule to allow for incoming traffic on TCP port 5000.
+Dependendo das suas definições de sistema, poderá ter que adicionar uma regra na firewall para permitir tráfego de entrada na porta TCP 5000.
 {% endhint %}
 
 {% hint style="info" %}
-### Note for core users
+### Nota para utilizadores core
 
-the default setting is that the GUI starts automatically, but pair processing does not. Set `"start": true,` in `config.js` to start processing pairs.
+A definição por defeito é que o GUI inicia automáticamente mas o processamento de pares não. Definir`"start": true,` na `config.js` para iniciar o processamento de pares \(cycling\).
 {% endhint %}
 
 {% hint style="danger" %}
-### Security notice
+### Aviso de Segurança
 
-Gunbot is intended to run on your local system. Making the Gunbot GUI available from outside networks is inherently risky, only do so on your own responsibility.
+Gunbot está preparado para correr no seu sistema local. Colocar o Gunbot GUI disponível para redes externas é um risco inerente e só o faça à sua responsabilidade.
 
-Considerable efforts went into securing the GUI, but please understand that achieving 100% security is not realistic.
+Esforços consideráveis foram realizados para tornar o GUI seguro mas, entenda que atingir 100% de segurança simplesmente não é realista.
 {% endhint %}
 
-## Installation video
+## Video de instalação
 
 {% embed url="https://youtu.be/ZGDSZbYmWDc" caption="" %}
 
-_The video above was made for Gunbot v10, however the basic steps still apply._
+_O video acima foi feito com o Gunbot v10, no entanto, os passos básicos ainda se aplicam._
 

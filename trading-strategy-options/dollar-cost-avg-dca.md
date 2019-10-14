@@ -131,7 +131,7 @@ Parameter name in `config.js`: `DU_METHOD`
 
 {% tabs %}
 {% tab title="Description" %}
-This defines the ratio to the pairs balance to be used for each consecutive buy when doubling up. Setting it to 0.5 would mean it uses a 0.5:1 ratio for averaging down. 
+This defines the ratio to the pairs balance to be used for each consecutive buy when doubling up. Setting it to 0.5 would mean it uses a 0.5:1 ratio for averaging down.
 
 It is recommended to set this as high as you can afford, to increase your chance to actually average down and sell at profit. Make sure that the resulting amount for the first double up order exceeds `MIN_VOLUME_TO_SELL`
 
@@ -227,7 +227,7 @@ Parameter name in `config.js`: `DU_BUYDOWN`
 
 {% tabs %}
 {% tab title="Description" %}
- Use this to specify the maximum RSI level for buying when `DU_METHOD` is set to RSI.
+Use this to specify the maximum RSI level for buying when `DU_METHOD` is set to RSI.
 {% endtab %}
 
 {% tab title="Values" %}
@@ -316,6 +316,4 @@ As soon as prices start going upward, the range freezes and a buy order is place
 Parameter name in `config.js`: `TRAIL_ME_BUY_RANGE`
 {% endtab %}
 {% endtabs %}
-
-### 
 

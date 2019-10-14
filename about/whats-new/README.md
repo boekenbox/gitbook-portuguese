@@ -1,119 +1,124 @@
 ---
 description: >-
-  Here's a quick overview of the most important changes introduced with Gunbot
-  v13.
+  Eis uma breve descrição das novidades mais importantes introduzidas com o
+  Gunbot v13.
 ---
 
-# What's new?
+# Novidades na v13
 
-Gunbot v13 focuses on bugfixes and improving user experience. That's why this time there is no long list of new features, just a long list of improvements.
+Gunbot v13 foca-se na melhoria da experiência de utilizador e na correcção de erros \(bugfixes\).   
+Por isso desta vez, não existe uma lista longa de novas funcionalidades mas sim uma lista longa de melhoramentos. 
 
-## **Upgrading**
+## **Actualização \(Upgrading\)**
 
-[Download](../../setup-and-general-settings/installation/download.md) the update and unpack it to a new folder, copy the `config.js` and `gunbotgui.db` files from your previous v12 installation into the new folder to keep your settings. 
+[Efectuar o Download](../../setup-and-general-settings/installation/download.md) da actualização e descompactar para uma pasta nova. Copiar os ficheiros `config.js` e `gunbotgui.db`da sua pasta da versão anterior v12 para a nova pasta para manter as suas definições.
 
-* Empty your browser cache for your Gunbot GUI \(for example with ctrl-F5\).
-* In case you used https for the GUI, also make sure to copy both the key and certificate files to the new folder.
-* If you have pairs that are already in DU or RT, also copy the /json folder from v12 to v13.
-* New strategy parameters for v13 will be automatically added through the GUI the first time you update a strategy. This happens on a per strategy basis.
-* Make sure to set the new Admin ID for Telegram, for better privacy.
-* When you use email alerts, make sure the [syntax of your alerts](../../setup-and-general-settings/preferences/tradingview-add-on.md#alert-message-contents) is correct.
-* If you also want to migrate your settings for the Telegram bot, copy the `tgconfig.json` file to your new folder as well.
+* Esvaziar a cache do seu browser para aceder ao GUI do Gunbot \(Com CTRL+F5 por exemplo\).
+* Na eventualidade de ter utilizado https para aceder ao GUI, garantir que copia os ficheiros, quer do certificado, quer da chave do certificado para a nova pasta.
+* Se tem pares que já estejam em estado DU ou RT, copiar também a pasta /json da v12 para a v13.
+* Os novos parametros de estratégia da v13 serão adicionados automáticamente pelo GUI na primeira vez que actualizar a estratégia. Isto acontece a cada estratégia actualizada.
+* Garanta que define o novo Admin ID to Telegram, para melhorar a privacidade.
+* Quando utilizar alertas de email, garantir que[ a syntax dos seus alertas](../../setup-and-general-settings/preferences/tradingview-add-on.md#alert-message-contents) está correcta
+* Se quiser migrar as suas definições do Robot do Telegram, copie o ficheiro `tgconfig.json` para a sua nova pasta também.
 
-_Due to new libraries used, you cannot simply overwrite the executable for this release._
+_Devido à utilização de novas livrarias, não se pode simplesmente copiar por cima o executável para esta versão._
 
 \*\*\*\*
 
-## New features / changes in v13
+## Novas funcionalidades / alterações na v13
 
-* **New exchanges:** Gunbot now supports trading on Idax and Cobinhood. Please note that Cobinhood only has an API key, not an API secret - use an IP restriction for your key for added security.
-* **Restrict buying with `SMACROSS` :** you can now restrict `SMACROSS` to only place a single buy order, instead of buying on every cross up. Set `SINGLE_BUY` true to only allow a single buy order.
-* **Improved privacy for Cryptosight:** restrict who is allowed to view and interact with your Telegram bot.  Use the `admin_id` setting to specify one or more user IDs that are allowed to use your Telegram bot.
-* **Improved GUI template:** better optimized for mobile usage, different color schemes and support for setting a custom highlight color.
-* **Changes to margin trading on Bitfinex \(TV add-on\):** all amounts should now be specified in quote. 
-* **Different alert syntax for closing positions on Bitmex \(TV add-on\):** longs are now closed with CLOSELONG\_, shorts with CLOSESHORT\_ instead of CLOSE\_ for both.
-* **New path for log files:** per pair log files are now saved in the /gunbot\_logs folder.
+* **Novos Exchanges: Gunbot** suporta agora trading no Idax e Cobinhood. De notar que Cobinhood utiliza somente chave de API, sem segredo - por uma questão de segurança adicional, utilizar uma restrição de IP para a chave de API.
+* **Restrição de compra com `SMACROSS`** : Já é possível restringir `SMACROSS`para colocar somente uma ordem de compra, em vez de comprar em cada cruzamento para cima \(cross up\). Basta definir `SINGLE_BUY`como verdadeiro, para permitir apenas uma ordem de compra
+* **Melhoria de privacidade para Cryptosight :** Restringir a quem é permitido visualizar e interagir com o seu robô de Telegram. Utilize a definição `admin_id`para especificar um ou mais IDs de utilizadores que são permitidos com o seu robô de Telegram.
+* **Melhoria da Base de GUI:** Optimizado para utilização com Telemóvel/Celular, com diferentes esquemas de cores e suporte para costumização de cores de alto contraste.
+* **Alterações ao "margin trading" no Bitfinex \(TV add-on\):** Todos os montantes devem ser agora especificados em quote.
+* **Diferente syntax nos alertas para "closing positions" no Bitmex \(TV add-on\):** "longs" são agora fechados com CLOSELONG\_, "shorts" com CLOSESHORT\_ ao invês de CLOSE\_ para ambos. 
+* **Novo caminho para ficheiros de logs:** Cada par e seus logs são agora guardados na pasta /gunbot\_logs.
+
+\*\*\*\*
 
 {% hint style="warning" %}
-**Notice for Bitmex users**
+**Aviso para utilizadores Bitmex**
 
-It is strongly recommended to now use `STOP_BUY` and `STOP_SELL` instead of `STOP_LIMIT`.
+É fortemente aconselhado utilizar a partir de agora `STOP_BUY` e `STOP_SELL`em vez de`STOP_LIMIT.`
 
-Disable `STOP_LIMIT` by setting it's value to 99999, to prevent accidental triggers.
+Desabilite`STOP_LIMIT` definindo o valor para 99999, para prevenir triggers acidentais.
 {% endhint %}
 
-## **Gunbot core bugfixes**
 
-Notable fixes:
 
-* Better support for new currencies on Kraken, whatever shitcoin they are going to list, Gunbot will be ready to trade without needing an update
-* Fix reversed orders array at Bittrex and Huobi
-* Fix an issue that would cause multiple buys at Binance
-* Fix an issue that would wrongly calculate trading map values on Binance
-* Improve backward compatibility of ABP calculations
-* Fix Huobi ABP
-* Fix "lowerCase of undefined" error
-* Improve SMACROSS behavior
-* Cancel all stop orders if ROE is reached, on Bitmex
-* Various fixes for manual orders through the GUI
-* Fix buy/sell stop orders on Bitmex, for both market and limit orders.
-* Fix STOP\_LIMIT sometimes not working on Kraken
-* Fix stop orders triggering "waiting for open orders"
-* Fix Tl\_ALLIN for long orders on Bitmex.
-* Fix MACD-H display on custom strat
-* Fix "toLowerCase" error
-* Available funds are now used only after an RT\_SELL. 
-* Fix FUNDS\_RESERVE not being respected
-* Fix clientId issue on KuCoin
-* If a buy gets canceled then set off double buy protection. 
-* Correct an error that sometimes caused orders to be cancelled too early
-* Improved triggering of DU orders
-* Fix RT\_SELL, RT\_BUY triggering
-* Fix "just bought"
-* Fix price precision for CoinBase Pro
+## **Gunbot e correcções de erros**
 
-## TradingView add-on bugfixes
+Correcções principais:
 
-* Fix TV plugin LONG orders amounts
-* Fix TV buy order at Bittrex
-* Fx an issue that would prevent some buy orders at Bitfinex using TV plugin
-* Fix CLOSELONG,CLOSESHORT for Bitfinex. All amounts for Bitfinex margin are now defined in quote
-* Better respect order amounts in LONG and SHORT alerts on Bitfinex.
-* Fix occasional errors for LONG,SHORT,CLOSELONG,CLOSESHORT on Bitmex.
+* Melhor suporte nas novas moedas no Kraken. Qualquer moeda \(shitcoin\) que será listada, Gunbot estará pronto sem precisar de actualização
+* Correcção na listagem de ordens revertida no Bittrex e Huobi
+* Correcção numa situação que causava multiplas compras no Binance
+* Correcção numa situação que calculava mal o mapa de valores de trades no Binance
+* Melhoria na retro compatibilidade dos cálculos de ABP \(Preço médio de compra\)
+* Correcção no ABP no Huobi
+* Correcção do erro "lowerCase of undefined"
+* Melhoria no comporamento SMACROSS
+* Cancelamento de todas as ordens de Stop se o ROE é alcançado, no Bitmex
+* Várias correcções para ordens manuais feitas através do GUI
+* Correcção das ordens de stop compra/venda no bitmex, para ordens de market ou limit
+* Correcção no STOP\_LIMIT que por vezes não funcionava no kraken
+* Correcção nas ordens de stop que despolevata "waiting for open orders"
+* Correcção TI\_ALLIN para ordens do tipo long no Bitmex
+* Correcção no display de MACD-H na estratégia do tipo custom 
+* Correcção no erro "toLowerCase"
+* Fundos Disponíveis agora são apenas usados após um RT\_SELL
+* Correcção no FUNDS\_RESERVE que não era respeitado
+* Correcção do problema clientid no KuCoin 
+* Se uma compra é cancelada, colocar no estado false o "Double Buy Protection"
+* Correcção de um erro que por vezes causava cancelamento de ordens demasiado cedo
+* Melhoria no triggering das ordens do DU
+* Correçcão no triggering RT\_SELL e RT\_BUY
+* Correcção do "just bought"
+* Correcção da precisão de preço no Coinbase Pro
 
-## GUI changes
+## TradingView add-on correcção de erros
 
-Notable bugfixes and changes to the GUI:
+* Correcção nos montantes das ordens LONG do TV plugin
+* Correcção nas ordens TV Buy, no Bittrex
+* Correcção da situação que impossibilitava algumas ordens de compra no Bitfinex utilizando o TV plugin
+* Correcção de CLOSELONG e CLOSESHORT no Bitfinex. Todos os montantes para Bitfinex margin são agora definidos em quote.
+* Melhor respeito dos montantes de ordens em alertas LONG e SHORT, no Bitfinex
+* Correcção de erros ocasionais para LONG, SHORT, CLOSELONG e CLOSESHORT, no Bitmex
 
-* New style and searchable dropdown selections
-* Add GUI Tone color-picker in theme
-* Fix navbar default active tab
-* Fix imap tooltips
-* Add themes for mobile
-* Add Notification panel for mobile
-* Update jquery cdn
-* Major graphic update
-* Improve mobile layout
-* Redesign login page
-* Update all the setting sections
-* Improved tooltip texts
-* Hide ROE\_CLOSE for strategies that don't use it
+## Alterações no GUI
 
-## Telegram changes
+Correcções Principais e alterações ao GUI:
 
-Notable changes to the Telegram bot:
-
-* Fix notification profit percentage
-* Hide wrong data in overview with multiple base
-* Ability to restrict Cryptosight access to one or more Telegram users
-* Fix creation/deletion of pairs. Changes are saved after going back to the main menu.
-* Show contracts and liquidation price for margin
+* Novo estilo e botões de dropdown com pesquisa
+* Adição de Escolha de Cor do tema no GUI
+* Correcção da barra de navegação na tab activa
+* Correcção dos balões de sugestão \(tooltips\) de imap
+* Adição de temas para mobile
+* Adição de Painel de notificação para mobile
+* Actualização de jquery cdn
+* Grandes alterações e melhorias gráficas
+* Melhoria do layout em mobile
+* Redesenho da página de login
+* Actualização de todas as secções de definições
+* Melhoria nos textos de tooltips
+* Esconder/Desabilitar de ROE\_CLOSE para estratégias que não utilizam esta função
 
 
 
+## Alterações no Telegram
+
+Alterações Principais para o robô de Telegram:
+
+* Correcção na notificação da percentagem de lucro
+* Esconder a informação errada no âmbito geral com base múltipla
+* Capacidade de restringir o acesso ao Cryptosight a um ou mais utilizadores do Telegram
+* Correcção na criar/apagar dos pares. Alteração são agora guardadas depois de regressar ao menu principal
+* Mostrar contratos e preço de liquidação para margin
 
 
-## GUI changes
+
+## 
 
 {% page-ref page="../../setup-and-general-settings/installation/download.md" %}
 

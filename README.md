@@ -1,20 +1,21 @@
 ---
-description: 'This wiki is written for the latest stable Gunbot release: v13'
+description: 'Este Wiki foi escrito para a última versão estável de Gunbot: v13'
 ---
 
-# Welcome to the Portuguese Gunbot wiki
+# Bem-vindos ao Wiki em Português do Gunbot
 
-**Gunbot is an easy to use, advanced crypto trading bot. You define your trading strategy and watch Gunbot do the trading for you. Enabling you to get up to hundreds of profitable trades per day, 24/7.**
+**Gunbot é um robô avançado de trading, fácil de usar. Para isso, basta definir a sua estratégia de trading e deixar o Gunbot realizar as operações de trading por si. Desta forma, será possível obter até centenas de operações lucrativas por dia, 24/7 .**
 
-For security reasons, Gunbot runs on your local computer or your server only. This way your trading API secret stays private, and nobody can influence or monitor your trading.
+Por razões de segurança, Gunbot corre apenas no seu computador pessoal ou seu próprio servidor. Desta forma, as suas APIs e segredos permanecem privadas, impossibilitando terceiros de monitorizar ou influenciar as suas operações de trading.
 
-No need for a subscription, a one time fee gets you lifetime support and software updates.
+Não existe necessidade para uma subscrição, bastando apenas um pagamento único para obter suporte e updates para sempre.  
 
-> _We aim to build the perfect money machine._
 
-### Gunbot is used by thousands of users and has an awesome community ❤️
+> _O nosso objectivo é construir a máquina perfeita de fazer dinheiro._
 
-![](.gitbook/assets/image%20%2822%29.png)
+### Gunbot é utilizado por milhares de utilizadores e com uma comunidade incrível ❤️
+
+![](.gitbook/assets/image-22%20%282%29.png)
 
 {% page-ref page="setup-and-general-settings/installation/" %}
 
@@ -24,11 +25,9 @@ No need for a subscription, a one time fee gets you lifetime support and softwar
 
 {% page-ref page="how-to-work-with-gunbot/editing-strategies-and-pairs/" %}
 
-### 
+### Atalhos para descrição de Estratégias
 
-### Shortcuts to strategy descriptions
-
-| Strategy | Link to regular trading description | Link to margin trading description |
+| Estratégia | Link  para estratégia do tipo Regular | Link para estratégia do tipo Margin |
 | :--- | :--- | :--- |
 | `ADX` | [Regular](trading-strategy-options/regular-strategies-spot-trading/adx.md) | [Margin](trading-strategy-options/margin-trading-strategies/adx.md) |
 | `ATRTS` | [Regular](trading-strategy-options/regular-strategies-spot-trading/atrts.md) | [Margin](trading-strategy-options/margin-trading-strategies/atrts.md) |
@@ -47,12 +46,15 @@ No need for a subscription, a one time fee gets you lifetime support and softwar
 | `tssl` | [Regular](trading-strategy-options/regular-strategies-spot-trading/tssl-trailing-stop-stop-limit.md) | [Margin](trading-strategy-options/margin-trading-strategies/tssl-trailing-stop-stop-limit.md) |
 
 {% hint style="warning" %}
-## Disclaimer
+## Aviso
 
-The information provided on this wiki does not constitute investment advice, financial advice, trading advice, or any other sort of advice, and you should not treat any of the wiki's content as such. Gunbot does not recommend that any asset should be bought, sold, or held by you. Nothing on this website should be taken as an offer to buy, sell or hold a cryptocurrency. 
-
-Do conduct your own due diligence and consult your financial advisory before making any investment decision. Gunbot will not be held responsible for the investment decisions you make based on the information published on this wiki.
+A informação fornecida neste wiki não constitui aconselhamento de investimento, aconselhamento financeiro, aconselhamento de trading ou qualquer outro tipo de aconselhamento e o conteúdo deste wiki não deverá ser tratado como tal.  
+Gunbot não recomenda que qualquer bem/produto deva ser adquirido, vendido ou guardado por si. Nada neste website deve ser tomado como um oferta para compra, venda ou guarda de  qualquer cryptomoeda.   
+  
+Conduza a sua própria diligência e consulte o seu aconselhador financeiro antes de tomar qualquer decisão de investimento. Gunbot não poderá ser considerado responsável pelas suas decisões de investimento que fará baseado na informação publicada neste wiki.
 {% endhint %}
+
+
 
 **Project origin:** [BitcoinTalk thread](https://bitcointalk.org/index.php?topic=1715214.0).
 

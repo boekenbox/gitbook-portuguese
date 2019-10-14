@@ -19,7 +19,7 @@ After a stop limit sell order has been placed, the bot will go into buying mode 
 Setting a stop limit at 60 would make sure that all holdings for a coin are sold when 60% value is lost, compared to the averaged bought price. E.g. average bought price is 100, stop limit is executed at 40 and all assets are sold.
 
 {% hint style="info" %}
-On margin exchanges, the stop limit is set as a ROE value. Setting it to 1 will lead to the stop limit triggering when ROE reaches -1. 
+On margin exchanges, the stop limit is set as a ROE value. Setting it to 1 will lead to the stop limit triggering when ROE reaches -1.
 
 It's recommended to use STOP\_BUY / STOP\_SELL instead, as these are placed at the same time as the position is opened.
 {% endhint %}
@@ -118,7 +118,7 @@ Parameter name in `config.js`: `PANIC_SELL`
 
 {% tabs %}
 {% tab title="Description" %}
-Sets a timeout between two trades for a single pair, in this time no trades will be placed. 
+Sets a timeout between two trades for a single pair, in this time no trades will be placed.
 {% endtab %}
 
 {% tab title="Values" %}
@@ -240,7 +240,7 @@ Parameter name in `config.js`: `IGNORE_TRADES_BEFORE`
 {% tab title="Description" %}
 Exchanges often don't provide order information anymore on trades that happened longer ago. This parameter exists to manually specify a reference price per unit that Gunbot should consider when selling an asset for which no bought price is provided by the exchange.
 
-This parameter should only be used as an override. 
+This parameter should only be used as an override.
 
 The override is only valid when no bought price can be retrieved from the exchange. In case you want to forcefully override an available bought price, you can apply `IGNORE_TRADES_BEFORE` and remove the pairs state json file after doing so.
 

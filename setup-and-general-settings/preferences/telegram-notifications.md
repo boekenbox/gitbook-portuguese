@@ -1,214 +1,218 @@
 ---
 description: >-
-  Gunbot comes with a built-in Telegram bot that can be used to receive trade
-  notifications, retrieve stats and control certain options of Gunbot right from
-  from your Telegram client.
+  O Gunbot incluí um robô do Telegram que pode ser utilizado para receber
+  notificações de trade, estatisticas e controlar algumas opções do Gunbot,
+  através do cliente do Telegram.
 ---
 
 # Telegram notifications
 
 {% hint style="info" %}
-The Telegram bot \(formerly called CryptoSight\) is fully integrated into Gunbot. All you need to do to start the Telegram bot is enable Telegram notifications in your Gunbot settings.
-
-After setting it up, type `/start` to your bot to open the menu.
+O robô do Telegram \(anteriormente conhecido como CryptoSight\) está completamente integrado com o Gunbot. Tudo o que necessita de fazer é iniciar o robô do Telegram e activar as notificações de Telegram nas definições do Gunbot.
 {% endhint %}
 
-## Demo video
+{% hint style="info" %}
+Depois da configuração, escrever`/start` no seu robô para abrir o menu.
+{% endhint %}
+
+## Video de demonstração
 
 {% embed url="https://www.youtube.com/watch?v=11fHq22nNFo" caption="" %}
 
-## Get started
+## Iniciar
 
-To set this up, go to **Settings** &gt; **Telegram**.
+Para configurar, ir a **Settings** &gt; **Telegram**.
 
-![Settings options for your Telegram bot](../../.gitbook/assets/image%20%2834%29.png)
+![Op&#xE7;&#xF5;es dos par&#xE2;metros para o rob&#xF4; do Telegram](../../.gitbook/assets/image-34.png)
 
-## Steps to create a Telegram bot
+## Passos para criar um robô do Telegram
 
-Notifications work by first creating a personal bot on Telegram, Gunbot then connects to this bot to push notifications to you.
+As notificações funcionam criando primeiro um robô pessoal do Telegram. O Gunbot liga-se a este robô para enviar as notificações para si.
 
-This is how to create a bot:
+Os passos para criar o robô são os seguintes:
 
-1. Talk to [@botfather](https://telegram.me/botfather). Create a new bot with the command /newbot and choose a name and username for your bot. Save the bot token shown.
-2. Talk to [@myidbot](https://telegram.me/myidbot) to see your Chat ID, save it.
-3. Enable Telegram notifications for Gunbot, and enter the token and ID you've just gathered. Use the ID for both the user and admin ID fields, this makes sure that only you can interact with the Telegram bot. _Alternatively, you can set a comma separated list for Admin ID, specifying multiple IDs who may interact with the bot._
-4. Start a chat with the username you've picked for your bot, and hit the start button. If you don't see a start button, write "/start" and click on it afterwards.
+1. Falar com [@botfather](https://telegram.me/botfather). Criar um novo robô com o comando /newbot e escolher nome e username para o robô. Guardar o token mostrado.
+2. Falar com [@myidbot](https://telegram.me/myidbot) para visualizar o Chat ID. Guarde-o.
+3. Activar as notificações do Telegram no Gunbot e, introduzir o token e o ID que foram gerados. Utilize o ID para ambos os campos user e admin ID. Desta forma garante que apenas você pode interagir com o robô do Telegram. _Em alternativa, pode definir uma lista separada por vírgulas para o campo Admin ID, especificando múltiplos ID que podem interagir com o robô._
+4. Iniciar um chat com o username que escolheu para o robô e clickar no botão de start. Se não visualizar um botão de start, escrever "/start" e clickar no botão que irá surgir.
 
-## Settings descriptions
+## Descrições dos parâmetros
 
-Below you'll find detailed descriptions of all available parameters for Telegram notifications.
+Abaixo as descrições detalhadas de todos os parâmetros disponiveis para as notificações do Telegram.
 
 ### Enabled
 
 {% tabs %}
-{% tab title="Description" %}
-Enable this to have Gunbot send trade notifications through Telegram.
+{% tab title="Descrição" %}
+Activar este parâmetro para que o gunbot envie notificações de trade através do Telegram.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TELEGRAM_ENABLED`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TELEGRAM_ENABLED`
 {% endtab %}
 {% endtabs %}
 
 ### Bot Nickname
 
 {% tabs %}
-{% tab title="Description" %}
-Each trade notification starts with the nickname set here.
+{% tab title="Descrição" %}
+Cada notificação de trade começa com o nome definido neste parâmetro.
 
-Use this to easily check from which bot instance the notifications have been sent.
+Utilizar para facilmente se identificar qual a instação do robô que enviou as notificações.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="Valores" %}
+**Valores:** texto
 
-**Default value:** Gunbot
+**Valor por defeito:** Gunbot
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TELEGRAM_NICK`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TELEGRAM_NICK`
 {% endtab %}
 {% endtabs %}
 
 ### Token
 
 {% tabs %}
-{% tab title="Description" %}
-The Telegram token for your bot.
+{% tab title="Descrição" %}
+O token de Telegram do robô.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="Valores" %}
+**Valores:** texto
 
-**Default value:** YOURTOKEN
+**Valor por defeito:** YOURTOKEN
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TOKEN`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TOKEN`
 {% endtab %}
 {% endtabs %}
 
 ### Chat ID
 
 {% tabs %}
-{% tab title="Description" %}
-The Chat ID for your bot to send its messages to.
+{% tab title="Descrição" %}
+O Chat ID do robô para o qual o Gunbot envia as mensagens.
 
-**Valid options:**
+**Opções válidas:**
 
 _**"12345"**_
 
-A positive integer, to send messages directly to a telegram user. Use this method when you just want to receive notifications for your personal use.
+Um número positivo, para enviar mensagens directamente a utilizador de Telegram. Utilizar este método quando apenas quer receber notificações para uso pessoal.
 
-To find your telegram id, send /start to @MyTelegramID\_bot and it will respond with your ID.
+Para descobrir o seu Telegram ID, enviar "/start" para @MyTelegramID\_bot que este responderá com o seu ID.
 
 _**"-12345"**_
 
-A negative integer, to send messages to a group chat.
+Um número negativo, para enviar mensagens para um chat de grupo.
 
-The easiest way to obtain a groups id, is to open [https://web.telegram.org](https://web.telegram.org) login, and navigate to the group. Now pay attention to the URL, you should see something like [https://web.telegram.org/\#/im?p=g12345](https://web.telegram.org/#/im?p=g12345) - the number after the p=g part is the group id.
+A maneira mais fácil para obter o ID do grupo é abrindo o [https://web.telegram.org](https://web.telegram.org) , efectuar o login e navegar para o grupo. Olhando com atenção ao URL \(endereço\), verá algo do tipo [https://web.telegram.org/\#/im?p=g12345](https://web.telegram.org/#/im?p=g12345) - o número após o "p=" é o ID do grupo.
 
-This must be listed in chat\_id with a - symbol in front, in this case "-12345"
+Terá que ser listado com um id com o símbolo "-" antes do número, neste caso "-12345"
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="Valores" %}
+**Valores:** texto
 
-**Default value:** 123456789
+**Valor por defeito:** 123456789
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `chat_id`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `chat_id`
 {% endtab %}
 {% endtabs %}
 
 ### Admin ID
 
 {% tabs %}
-{% tab title="Description" %}
-Defines which Telegram user IDs are allowed to interact with the bot. Must be used next to Chat ID.
+{% tab title="Descrição" %}
+Define quais os IDs de utilizadores que são permitidos interagir com o robô. Devem ser usados a seguir ao Chat ID.
 
-When you leave this value empty, every Telegram user is able to interact with your Telegram bot.
+Quando este campo é deixado vazio, todos os utilizadores do Telegram conseguem interagir com o seu robô de Telegram.
 
-Multiple IDs can be entered as a comma separated list.
+Múltiplos IDs podem ser introduzidos, separados por vírgula.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="Valores" %}
+**Valores:** texto
 
-**Default value:** empty
+**Valor por defeito:** vazio
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `admin_id`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `admin_id`
 {% endtab %}
 {% endtabs %}
 
 ### TG PL Only
 
 {% tabs %}
-{% tab title="Description" %}
-When enabled notifications will be only sent for strategy sell orders.
+{% tab title="Descrição" %}
+Quando activado, apenas as notificações de ordens de venda da estratégia serão enviadas.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_PL_ONLY`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TG_PL_ONLY`
 {% endtab %}
 {% endtabs %}
 
 ### Telegram Order Timeout
 
 {% tabs %}
-{% tab title="Description" %}
-When set above 0, you'll receive a Telegram dialog to manually allow or deny every order Gunbot wants to place.
+{% tab title="Descrição" %}
+Quando definido acima de 0, receberá um diálogo do Telegram para manualmente permitir ou negar cada ordem que o Gunbot irá colocar.
 
-During the set amount of seconds you can choose to allow the order \(and it will immediately be placed\) or deny it. After the timeout passes without reply, the order will be placed at the exchange.
+Durante o número definido de segundos, poderá escolher permitir a ordem \(que será imediatamente colocada\). 
+
+Após o tempo definido em timeout expirar sem resposta, a ordem será colocada no exchange.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical, represent time in seconds.
+{% tab title="Valores" %}
+**Valores:** númerico, representa tempo em segundos.
 
-**Default value:** 0
+**Valor por defeito:** 0
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_ORDER_TIMEOUT`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TG_ORDER_TIMEOUT`
 {% endtab %}
 {% endtabs %}
 
 ### TG Test
 
 {% tabs %}
-{% tab title="Description" %}
-Enable this to test if your Telegram bot is working.
+{% tab title="Descrição" %}
+Activar este parâmetro para testar se o robô de Telegram está a funcionar correctamente.
 
-A test message will be sent on the first round for each pair. Disable after verifying your bot works.
+Uma mensagem de teste será enviada no primeiro ciclo para cada par processado. Desactivar após verificar o bom funcionamento do seu robô.
 
 {% hint style="info" %}
-This option is temporarily not available. It will be activated again in one of the next Gunbot updates.
+Esta opção encontra-se temporáriamente indisponivel. Será novamente activada num próximo update do Gunbot.
 {% endhint %}
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `TG_TEST`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `TG_TEST`
 {% endtab %}
 {% endtabs %}
 

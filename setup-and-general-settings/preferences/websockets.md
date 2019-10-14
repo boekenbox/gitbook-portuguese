@@ -1,70 +1,70 @@
 ---
-description: 'Websocket port settings, only needed for devs.'
+description: 'Definições de porta de Websocket, só necessário para programadores (devs).'
 ---
 
 # Websockets
 
-Gunbot emits certain data through websockets. Limited documentation for this feature is available on the following repository: [https://github.com/GuntharDeNiro/Gunthy/\#webgui-informations-for-devs-](https://github.com/GuntharDeNiro/Gunthy/#webgui-informations-for-devs-)
+O Gunbot fornece certa data através dos websockets. Documentação limitada para esta funcionalidade está disponível no seguinte repositório: [https://github.com/GuntharDeNiro/Gunthy/\#webgui-informations-for-devs-](https://github.com/GuntharDeNiro/Gunthy/#webgui-informations-for-devs-)
 
-To change websocket settings, go to **Settings** &gt; **Websocket**.
+Para alterar os parâmetros de websockets ir a **Settings** &gt; **Websocket**.
 
-![](../../.gitbook/assets/image%20%2837%29.png)
+![](../../.gitbook/assets/image-37.png)
 
-## Settings descriptions
+## Descrição de parâmetros
 
-Below you'll find detailed descriptions of all available parameters for websockets.
+Abaixo encontrará descrições detalhadas dos parâmetros disponíveis para websockets.
 
 ### Port \(WS\)
 
 {% tabs %}
-{% tab title="Description" %}
-Sets the port used for websockets.
+{% tab title="Descrição" %}
+Define a porta utilizada para websockets.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical, represents a port number
+{% tab title="Valores" %}
+**Valores:** numérico - representa o número da porta.
 
-**Default value:** 5001
+**Valor por defeito:** 5001
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `port`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `port`
 {% endtab %}
 {% endtabs %}
 
 ### Client Port
 
 {% tabs %}
-{% tab title="Description" %}
-You can change the client port for third party web interfaces here.
+{% tab title="Descrição" %}
+Pode alterar a porta de cliente para interfaces web de terceiros.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical, represents a port number.
+{% tab title="Valores" %}
+**Valores:** numérico - representa o número da porta.
 
-**Default value:** 3000
+**Valor por defeito:** 3000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `clientport`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `clientport`
 {% endtab %}
 {% endtabs %}
 
 ### Hostname
 
 {% tabs %}
-{% tab title="Description" %}
-The IP address or hostname to be used for WebSockets. Defaults to your localhost. An external IP can also be set.
+{% tab title="Descrição" %}
+O Endereço de IP ou nome da máquina \(hostname\) utilizado para websockets. Por defeito é "localhost". Pode ser definido também um IP externo.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string, represents an IP-address or hostname
+{% tab title="Valores" %}
+**Valores:** texto, representa um endereço ip ou hostname
 
-**Default value:** 127.0.0.1
+**Valor por defeito:** 127.0.0.1
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `hostname`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `hostname`
 {% endtab %}
 {% endtabs %}
 

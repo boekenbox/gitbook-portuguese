@@ -1,16 +1,16 @@
 ---
-description: Quick guides to get up and running on all supported platforms.
+description: Guia rápido para iniciar o gunbot em todas as plataformas.
 ---
 
-# Installation & startup
+# Instalação & Arranque inicial
 
-## Download Gunbot
+## Download do Gunbot
 
 {% page-ref page="download.md" %}
 
-## Installation instructions
+## Instruções de instalação
 
-Installation guides per platform can be found here:
+Guias de instalação por plataforma podem ser encontrados aqui:
 
 {% page-ref page="windows.md" %}
 
@@ -20,11 +20,11 @@ Installation guides per platform can be found here:
 
 {% page-ref page="arm.md" %}
 
-## Upgrading
+## Actualização
 
-Instructions on how to upgrade Gunbot are usually found in the release [changelog](../../about/whats-new/).
+Instruções em como realizar o upgrade ao Gunbot encontram-se normalmente na release no [changelog](../../about/whats-new/).
 
-For minor releases \(like patches\) it is usually enough to just overwrite the gunthy executable file.
+Para pequenas releases \(patches\) é suficiente simplesmente copiar o ficheiro executável por cima do existente.
 
-For major releases, follow the steps described in the changelog.
+Para grandes releases \(versões\), seguir os passos descritos no changelog.
 

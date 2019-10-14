@@ -1,2 +1,2 @@
-# Preferences
+# Preferências
 

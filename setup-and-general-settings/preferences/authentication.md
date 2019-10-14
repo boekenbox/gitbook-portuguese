@@ -1,18 +1,18 @@
 ---
-description: Setup authentication to secure access to your Gunbot.
+description: Configure autenticação para ober acesso seguro ao Gunbot.
 ---
 
-# Authentication
+# Autenticação
 
 ## Password
 
-The first time you visit the Gunbot GUI in your browser, you'll be asked to register your password.
+A primeira vez que visitar o GUI do Gunbot no browser, é pedido para registar a sua palavra-passe.
 
 ## Two factor authentication \(2FA\)
 
-Gunbot supports two factor authentication, using Google Authenticator, Authy or similar apps.
+Gunbot suporta autenticação com 2 factores \(2FA\) utilizando o Google Authenticator, Authy ou aplicações similares..
 
-To enable 2FA, go to **Settings** &gt; **Authentication**.
+Para activar o 2FA, ir a **Settings** &gt; **Authentication**.
 
-![Don&apos;t scan the QR code in this screenshot. Use the one generated in your own installation.](../../.gitbook/assets/image%20%2830%29.png)
+![Por favor n&#xE3;o fa&#xE7;a o scan do c&#xF3;digo QR nesta imagem. Use aquele que &#xE9; gerado pela sua instala&#xE7;&#xE3;o.](../../.gitbook/assets/image-30.png)
 

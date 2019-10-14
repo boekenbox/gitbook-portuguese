@@ -12,13 +12,11 @@ Gunbot will open one position, either long or short, and close this position whe
 Please don't manually add to or reduce positions opened by Gunbot, unless you stop running Gunbot on this trading pair until you've closed this position.
 {% endhint %}
 
-
-
 The examples below show how the basic triggers for `pp` work. Additionally, you can use confirming indicators and settings like ROE trailing.
 
 ### Long \(regular: trend following\)
 
-![](../../.gitbook/assets/image%20%2813%29.png)
+![](../../.gitbook/assets/image-13%20%282%29.png)
 
 * A long position is opened when the ask price is equal to or above `PP_BUY`.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.
@@ -26,7 +24,7 @@ The examples below show how the basic triggers for `pp` work. Additionally, you 
 
 ### Short \(regular: trend following\)
 
-![](../../.gitbook/assets/image%20%2842%29.png)
+![](../../.gitbook/assets/image-42.png)
 
 * A short position is opened when the bid price is equal to or below `PP_SELL`.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.
@@ -36,7 +34,7 @@ The examples below show how the basic triggers for `pp` work. Additionally, you 
 
 In `MEAN_REVERSION` mode the behavior for `PP_BUY` and `PP_SELL` is reversed in this strategy.
 
-![](../../.gitbook/assets/image%20%281%29.png)
+![](../../.gitbook/assets/image-1.png)
 
 * A long position is opened when the ask price is equal to or below `PP_BUY`.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.
@@ -46,7 +44,7 @@ In `MEAN_REVERSION` mode the behavior for `PP_BUY` and `PP_SELL` is reversed in 
 
 In `MEAN_REVERSION` mode the behavior for `PP_BUY` and `PP_SELL` is reversed in this strategy.
 
-![](../../.gitbook/assets/image%20%2815%29.png)
+![](../../.gitbook/assets/image-15%20%281%29.png)
 
 * A short position is opened when the bid price is equal to or above `PP_SELL`.
 * Position is closed when the desired `ROE` \(return on equity\) is reached. This is a percentage from the entry point, not taking leverage into consideration. Regardless what leverage is used, 1% price difference from your entry equals `ROE`: 1.

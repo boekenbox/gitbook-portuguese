@@ -4,7 +4,7 @@ description: Steps to create a compatible wallet to hold Gunthy tokens.
 
 # How to create a wallet
 
-To create a GUNTHY wallet, you must add a custom token to an Ethereum wallet and enter this contract address: `0x3684b581db1f94b721ee0022624329feb16ab653`. 
+To create a GUNTHY wallet, you must add a custom token to an Ethereum wallet and enter this contract address: `0x3684b581db1f94b721ee0022624329feb16ab653`.
 
 It's possible to use an ERC-20 compatible wallet without adding the contract address, but then you usually won't be able to see the tokens in your wallet software.
 
@@ -13,7 +13,7 @@ Below you'll find short descriptions on how to do that with a few of the most us
 **If you already have an Ethereum wallet, only the steps for adding a custom contract apply.**
 
 {% hint style="warning" %}
-**Do not use an exchange wallet.** 
+**Do not use an exchange wallet.**
 
 Gunbot won't run when you have your tokens stored on an exchange.
 {% endhint %}

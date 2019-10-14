@@ -12,8 +12,6 @@ Gunbot will open one position, either long or short, and close this position whe
 Please don't manually add to or reduce positions opened by Gunbot, unless you stop running Gunbot on this trading pair until you've closed this position.
 {% endhint %}
 
-
-
 For this strategy it is recommended to use an additional momentum indicator to confirm long and short entries.
 
 ### Long / Buy

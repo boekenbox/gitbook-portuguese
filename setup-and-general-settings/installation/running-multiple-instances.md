@@ -1,18 +1,18 @@
 ---
-description: Instructions to run multiple installations of Gunbot on the same machine.
+description: Instruções para executar múltiplas instâncias de Gunbot na mesma máquina.
 ---
 
-# Running multiple instances
+# Executar múltiplas instâncias
 
-To run multiple instances of Gunbot, just make a copy of its folder for each instance and make sure the following settings parameters are unique for each instance:
+Para executar multiplas instâncias de Gunbot, basta criar um cópia da pasta do Gunbot para cada instância e garantir que os seguintes parâmetros são únicos para cada instância:
 
-* `port` - both in the GUI and ws section
-* `clientport` - in the ws section
-* `TOKEN` in the bot section \(this is the token for Telegram notifications\)
+* `port` - Tanto no GUI como na secção ws
+* `clientport` - na secção ws 
+* `TOKEN` na secção bot  \(Este é o token para as notificações de Telegram\)
 
-The GUI of each instance will be available on localhost through the specified port number.
+O GUI de cada instância estará disponível no localhost através da número especificado em `port`
 
 {% hint style="info" %}
-Use a text editor like Notepad++ to edit the `config.js` file to make the required changes described above.
+Utilize um editor como o Notepad++ para editar o ficheiro `config.js` para criar as alterações descritas acima.
 {% endhint %}
 

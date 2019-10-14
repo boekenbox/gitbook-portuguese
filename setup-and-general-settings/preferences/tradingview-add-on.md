@@ -1,37 +1,39 @@
 ---
-description: Learn how to use Gunbot to execute trades based on incoming email alerts.
+description: 'Aprenda a executar trades com o Gunbot, baseado em alertas enviados por email.'
 ---
 
 # TradingView
 
-TradingView is the most active social network for traders and investors. TradingView allows users to create and share technical analysis and advanced trading strategies on their interactive charts.
+TradingView é a rede social mais activa para investidores e tradeer. Permite aos utilizadores criar e partilhar análises técnicas e estratégias avançadas de trading nos seus gráficos \(charts\) interactivos.
 
-With the Gunbot TradingView add-on you can trade on alerts sent from custom strategies at Tradingview, completely managing your strategy at TradingView. Gunbot receives trade signals by e-mail and trades accordingly.
+Com o add-on de TradingView para o Gunbot, pode efectuar trading baseado em alertas enviados de estratégias costumizados em TradingView, gerindo apenas a sua estratégia de tradingview. O Gunbot recebe um sinal de trade através de email e executa de acordo com a ordem recebida..
 
 {% hint style="info" %}
-This is a paid add-on, availability depends on your license type.
+Este é um add-on pago e a sua disponibilidade depende do tipo de licença adquirido.
 {% endhint %}
 
-## Setup video
+## Video de configuração
 
-Before you start setting up your alerts, you need:
+Antes de iniciar a configuração dos seus alertas, é necessário:
 
-* The IMAP data for the email address you receive alerts from TradingView on.
-* A Pro subscription at tradingview.com \(works with trial too\). Free accounts are limited to one alert.
+* Os dados de IMAP para o endereço de email pelo qual irá receber os alertas do TradingView.
+* Uma subscrição do tipo PRO do TradingView \(funciona com trial também\). Contas gratuitas estão limitadas a apenas um alerta.
 
-{% embed url="https://www.youtube.com/watch?v=H2EybuYxc3Y" caption="This video was made for an older Gunbot version. The basic steps still apply." %}
+{% embed url="https://www.youtube.com/watch?v=H2EybuYxc3Y" caption="Video feito com uma versão mais antiga do Gunbot.Os passos de configuração básica ainda se aplicam." %}
 
-[Script used in example: Finn's Microprofit Strategy](https://gunthy.org/forum/index.php/topic,1548.0.html)
+
+
+[Script utilizado no exemplo: Finn's Microprofit Strategy](https://gunthy.org/forum/index.php/topic,1548.0.html)
 
 {% page-ref page="imap-listener.md" %}
 
-## Alert message contents
+## Conteúdo das mensagens de alerta
 
-The alerts messages have to be in the following format in order for Gunbot to act on them. Alerts follow the same standardized pair syntax that also apply for normal Gunbot usage.
+As mensagens de alerta têm que estar no seguinte formato de modo a que o Gunbot possa executar baseado nos alertas. Os alertas seguem o mesmo formato standard da syntax de pares, aplicado também no uso normal do Gunbot.
 
-Trading limits can only be specifically defined in buy/long alerts, for other alerts or alerts without specified amounts, the limits as set in your TradingView settings apply.
+Limites de trading pode somente ser especificados nos alertas do tipo buy/long. Para outros alertas ou alertas sem montantes especificados, os limites considerados são os definidos no parâmetros do TradingView..
 
-_Replace_ `EXCHANGE` _with the name of your exchange._
+_Substituir_ `EXCHANGE` _com o nome do seu exchange._
 
 \_\_
 
@@ -43,8 +45,6 @@ _Replace_ `EXCHANGE` _with the name of your exchange._
 | BUY\_EXCHANGE\_BTC-ETH\_0.1 | Buy ETH using BTC with a trading limit of 0.1 BTC |
 | SELL\_EXCHANGE\_USDT-BTC | Sell BTC for USDT |
 | STOPLOSS\_EXCHANGE\_BTC-ETH | Sell ETH for BTC if stoploss is triggered |
-
-
 
 #### Alerts for margin trading  on Bitmex and Bitfinex
 
@@ -60,12 +60,10 @@ _Replace_ `EXCHANGE` _with the name of your exchange._
 {% hint style="info" %}
 **Note about trading limits on Bitmex and Bitfinex**
 
-On Bitmex, every setting related to trading limits for margin trading must be specified in contracts.   
-  
+On Bitmex, every setting related to trading limits for margin trading must be specified in contracts.
+
 On Bitfinex, every setting related to margin trading limits must be specified in amounts of quote currency.
 {% endhint %}
-
-
 
 #### Alerts for margin trading at Kraken, Poloniex and Huobi.
 
@@ -82,7 +80,7 @@ To run Gunbot with the TradingView add-on, the following are the only relevant s
 
 Open the settings by going to **Settings** &gt; **TradingView.**
 
-![Settings options for the TradingView add-on](../../.gitbook/assets/image%20%2840%29.png)
+![Settings options for the TradingView add-on](../../.gitbook/assets/image-40.png)
 
 Trading limits for buy orders are set in the configuration settings, optionally you can override these by specifying the trading limit in the alert message contents.
 

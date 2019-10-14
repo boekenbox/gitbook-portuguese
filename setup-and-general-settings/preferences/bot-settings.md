@@ -1,167 +1,167 @@
 ---
-description: Information about global bot settings.
+description: Informação acerca de parâmetros globais do Bot.
 ---
 
-# Bot settings
+# Parâmetros Bot
 
-The bot settings menu lets you change global settings that affect all trading pairs.
+O menu de parâmetros do Bot permite-lhe alterar definições globais que afectam todos os pares de trading.
 
-To change them, go to **Settings** &gt; **Bot Settings**.
+Para alterar basta ir a **Settings** &gt; **Bot Settings**.
 
-![Global bot settings](../../.gitbook/assets/image%20%2846%29.png)
+![Defini&#xE7;&#xF5;es globais do Bot](../../.gitbook/assets/image-46.png)
 
-## Settings descriptions
+## Descrição dos parâmetros
 
-Below you'll find detailed descriptions of all available parameters for bot settings. A few advanced settings are only available in the `config.js` file.
+Abaixo irá encontrar descrições detalhados dos parâmetros disponiveis para o menu bot. Alguns parâmetros avançados apenas estão disponíveis através do ficheiro `config.js` .
 
 ### Watch Mode
 
 {% tabs %}
-{% tab title="Description" %}
-When set to true, Gunbot will process the configured pairs, but will not place actual buy or sell orders. Good for testing.
+{% tab title="Descrição" %}
+Quando habilitado para true, o Gunbot irá processar os pares configurados  mas não colocará nenhuma ordem real, quer de compra, quer de venda. Bom para testes.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `WATCH_MODE`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `WATCH_MODE`
 {% endtab %}
 {% endtabs %}
 
 ### Multiple Base
 
 {% tabs %}
-{% tab title="Description" %}
-Use this option to trade pairs with cross-over between quote and base \(for example BTC-ETH and ETH-ADA\).
+{% tab title="Descrição" %}
+Usar esta opção para fazer trade com pares que tenham cruzamento entre quote e base \(por exemplo BTC-ETH e ETH-ADA\).
 
-When enabled, Gunbot won't sell all available quote units when selling, instead it will only sell the invested funds \(as defined in the trading limit\). Also affects the TradingView add-on.
+Quanto activo, o gunbot não irá vender todas as unidades de quote disponiveis. Em vez disso, irá apenas vender o que foi investido \(como definido no limite de trade - trading limit\). Afecta o add-on do TradingView.
 
-Only enable this when you really need it.
+Activar apenas quando fôr mesmo necessário.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `MULTIPLE_BASE`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `MULTIPLE_BASE`
 {% endtab %}
 {% endtabs %}
 
 ### Debug
 
 {% tabs %}
-{% tab title="Description" %}
-Used to show debug messages in the bot, when set to true. Only use this if you really need to debug something.
+{% tab title="Descrição" %}
+Utilizado para visualizar mensagens de depuração/erro no bot, quando definido como true. Utilizar apenas se necessário para verificar alguma situação.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `debug`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `debug`
 {% endtab %}
 {% endtabs %}
 
 ### Verbose
 
 {% tabs %}
-{% tab title="Description" %}
-Setting this to true will lead to more detailed information being shown in the console.
+{% tab title="Descrição" %}
+Activando este parâmetro para true, fornecerá informação mais detalhada na consola.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `VERBOSE`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `VERBOSE`
 {% endtab %}
 {% endtabs %}
 
 ### Reserve Pile Up
 
 {% tabs %}
-{% tab title="Description" %}
-When set to true, trading gains will be automatically added to the funds reserve and be kept out of further trading.
+{% tab title="Descrição" %}
+Activando este parâmetro para true, os ganhos de trading, serão automáticamente adicionados ao fundo de reserva e não serão utilizados em mais trading
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `RESERVE_PILE_UP`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `RESERVE_PILE_UP`
 {% endtab %}
 {% endtabs %}
 
 ### Bot Delay
 
 {% tabs %}
-{% tab title="Description" %}
-Bot will delay processing a new pair for a set amount of seconds.
+{% tab title="Descrição" %}
+O bot atrasará o processamento de um novo par pelo valor definido, em segundos.
 
-Useful for when Gunbot requests data faster than the exchange API is allowing you to do. As the needed delay depends on the amount of pairs and the speed your system needs to cycle pairs, there are no recommended values.
+Útil para quando o Gunbot requisita dados mais rápido do que a API do Exchange permite. Como o valor de atraso necessário depende do número de pares e a velocidade do sistema, não existe um valor recomendado
 
-This is the global setting for bot delay, it is ignored when an exchange specific delay is set.
+Esta é uma definição global para o atraso do bot. É ignorado quando existe um atraso definido especificamente nas definições do exchange.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical – represents time in seconds.
+{% tab title="Valores" %}
+**Valores:** numérico – representa tempo em segundos.
 
-**Default value:** 1
+**Valor por defeito:** 1
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `BOT_DELAY`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `BOT_DELAY`
 {% endtab %}
 {% endtabs %}
 
 ### Bot CClean
 
 {% tabs %}
-{% tab title="Description" %}
-This parameter forces the Gunbot cache to be cleaned by restarting the bot every x hours. This setting does not trigger `TRADES_TIMEOUT`.
+{% tab title="Descrição" %}
+Este parâmetro força a limpeza da cache do Gunbot, obrigando o re-inicio do bot a cada x horas. Este parâmetro não influencia o trigger de `TRADES_TIMEOUT`.
 
-Only set this to a low value when your bot actually has problems not trading after a longer period of use.
+Apenas definir este parâmetro para um valor baixo quando o bot tem problemas reais e não efectua trading após um longo período de uso.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical – represents time in hours.
+{% tab title="Valores" %}
+**Valores:** numérico – representa tempo em horas.
 
-**Default value:** 2
+**Valor por defeito:** 2
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `BOT_CCLEAN`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `BOT_CCLEAN`
 {% endtab %}
 {% endtabs %}
 
 ### Interval Ticker Update
 
 {% tabs %}
-{% tab title="Description" %}
-Deprecated
+{% tab title="Descrição" %}
+Descontinuado
 {% endtab %}
 
-{% tab title="Values" %}
+{% tab title="Valores" %}
 
 {% endtab %}
 
-{% tab title="Name" %}
+{% tab title="Nome" %}
 
 {% endtab %}
 {% endtabs %}
@@ -169,15 +169,15 @@ Deprecated
 ### Period Storage Ticker
 
 {% tabs %}
-{% tab title="Description" %}
-Deprecated
+{% tab title="Descrição" %}
+Descontinuado
 {% endtab %}
 
-{% tab title="Values" %}
+{% tab title="Valores" %}
 
 {% endtab %}
 
-{% tab title="Name" %}
+{% tab title="Nome" %}
 
 {% endtab %}
 {% endtabs %}
@@ -185,158 +185,158 @@ Deprecated
 ### Timeout Buy
 
 {% tabs %}
-{% tab title="Description" %}
-This is an internal timeout that prevents the bot from buying again within the set amount of milliseconds after a buy order has been placed.
+{% tab title="Descrição" %}
+Este é um timeout interno que previne que o bot compre outra vez, no espaço definido em milisegundos, após uma ordem de compra ter sido colocada.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical – represents time in milliseconds.
+{% tab title="Valores" %}
+**Valores:** numérico – representa tempo em milisegundos.
 
-**Default value:** 59000
+**Valor por defeito:** 59000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `timeout_buy`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `timeout_buy`
 {% endtab %}
 {% endtabs %}
 
 ### Timeout Sell
 
 {% tabs %}
-{% tab title="Description" %}
-This is an internal timeout that prevents the bot from selling again within the set amount of milliseconds after a sell order has been placed.
+{% tab title="Descrição" %}
+Este é um timeout interno que previne que o bot venda outra vez, no espaço definido em milisegundos, após uma ordem de venda ter sido colocada.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical – represents time in milliseconds.
+{% tab title="Valores" %}
+**Valores:** numérico – representa tempo em milisegundos.
 
-**Default value:** 60000
+**Valor por defeito:** 60000
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `timeout_sell`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `timeout_sell`
 {% endtab %}
 {% endtabs %}
 
 ### Cancel Orders Enabled
 
 {% tabs %}
-{% tab title="Description" %}
-When set to true, the bot will cancel unfilled or partially filled orders when the price has moved away from the buy or sell price.
+{% tab title="Descrição" %}
+Quando definido como true, o bot cancela ordens não preenchidas ou parcialmente preenchidas quando o preço se afastar do valor de compra ou venda.
 
-Set this to false if you also trade manually to prevent the bot from cancelling your open orders.
+Definir como false se também efectuar trades manuais, para impedir que o bot cancele as suas ordens manuais em aberto.
 
 **Simulated Fill Or Kill \(FOK\)**
 
-When an order is not or only partially filled and gets cancelled, Gunbot will attempt to fill the order by replacing it at current bid/ask.
+Quando uma ordem não é completada ou é parcialmente preenchida, e é cancelada, o Gunbot tentará preencher essa ordem, actualizando o valor para o actual bid/ask.
 
-For buy orders this means that FOK orders are sent as long as the number of quote units held are worth less than `TRADING_LIMIT` and the difference is higher than `MIN_VOLUME_TO_BUY`.
+Para ordens de compra isto significa que, ordens FOK são enviadas como tipo long por enquanto o número de unidades seguradas valerem menos que o `TRADING_LIMIT` e a diferença for maior que o `MIN_VOLUME_TO_BUY`.
 
-For sell orders this means that FOK orders are sent as long as the number of quote units held \(minus `KEEP_QUOTE`, if used\) are worth more than `MIN_VOLUME_TO_SELL` and bid is higher than the break-even point.
+Para ordens de venda isto que significa que, ordens FOK são enviadas como tipo long por enquanto o número de unidades seguradas \(menos `KEEP_QUOTE`, se utilizado\) valerem mais que  `MIN_VOLUME_TO_SELL` e o preço \(bid\) for maior que o ponto de break-even.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `CANCEL_ORDERS_ENABLED`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `CANCEL_ORDERS_ENABLED`
 {% endtab %}
 {% endtabs %}
 
 ### Cancel Orders Cycle Cap
 
 {% tabs %}
-{% tab title="Description" %}
-This only applies when using `MAKER_FEES` or `CANCEL_ONCAP`.
+{% tab title="Descrição" %}
+Apenas se aplica quando se utiliza `MAKER_FEES` ou `CANCEL_ONCAP`.
 
-Set the number of rounds that pending orders need to be kept open. After this number of rounds passes, Gunbot will cancel the pending order.
+Define o número de ciclos que as ordens pendentes podem estar em aberto. Após este número definido de ciclos passar, o Gunbot cancela a ordem pendente..
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical - represents a number of rounds.
+{% tab title="Valores" %}
+**Valores:** numérico - representa o número de ciclos.
 
-**Default value:** 10
+**Valor por defeito:** 10
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `CANCEL_ORDERS_CYCLE_CAP`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `CANCEL_ORDERS_CYCLE_CAP`
 {% endtab %}
 {% endtabs %}
 
 ### Cancel Orders Oncap
 
 {% tabs %}
-{% tab title="Description" %}
-Enabling this changes the behavior of cancelling orders: orders are cancelled after `CANCEL_ORDERS_CYCLE_CAP` passes.
+{% tab title="Descrição" %}
+Activando este parâmetro, altera o comportamento do cancelamento de ordens: as ordens são imediatamente canceladas após a passagem do valor definido em  `CANCEL_ORDERS_CYCLE_CAP` .
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** true or false
+{% tab title="Valores" %}
+**Valores:** true ou false
 
-**Default value:** false
+**Valor por defeito:** false
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `CANCEL_ONCAP`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `CANCEL_ONCAP`
 {% endtab %}
 {% endtabs %}
 
 ### Withdraw Threshold
 
 {% tabs %}
-{% tab title="Description" %}
-Set the amount of BTC to be accumulated with `RESERVE_PILE_UP` before an automatic withdraw will be executed.
+{% tab title="Descrição" %}
+Define o montante de BTC a ser acumulado com `RESERVE_PILE_UP` antes de um levantamento automático ser executado.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** numerical - represents an amount of BTC
+{% tab title="Valores" %}
+**Valores:** numérico - representa uma montante em BTC
 
-**Default value:** 0.5
+**Valor por defeito:** 0.5
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `withdraw_threshold`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `withdraw_threshold`
 {% endtab %}
 {% endtabs %}
 
 ### Withdraw Address
 
 {% tabs %}
-{% tab title="Description" %}
-Set a valid BTC wallet address to enable automatic withdraws each time the threshold is reached.
+{% tab title="Descrição" %}
+Define um endereço de BTC wallet que permita o levantamento automático quando o limite definido é atingido \(threshold\).
 
-Please use this feature at your own risk only.
+Por favor, use esta funcionalidade à sua responsabilidade.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** string
+{% tab title="Valores" %}
+**Valor:** string
 
-**Default value:** YOURBTCADDRESSHERE
+**Valor por defeito:** YOURBTCADDRESSHERE
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `withdraw_address`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `withdraw_address`
 {% endtab %}
 {% endtabs %}
 
 ### Json\_output
 
 {% tabs %}
-{% tab title="Description" %}
-Sets the path for storing .json files. These files are where Gunbot saves its trading information.
+{% tab title="Descrição" %}
+Define o caminho para guardar os ficheiros .json.  Estes ficheiros são onde o Gunbot guardar a informação de trading.
 {% endtab %}
 
-{% tab title="Values" %}
-**Values:** text, represents a folder location.
+{% tab title="Valores" %}
+**Valores:** texto, representa uma localização de pasta.
 
-**Default value:** ./json
+**Valor por defei**_**to:** ./json_
 {% endtab %}
 
-{% tab title="Name" %}
-Parameter name in `config.js`: `json_output`
+{% tab title="Nome" %}
+Nome do parâmetro em `config.js`: `json_output`
 {% endtab %}
 {% endtabs %}
 
