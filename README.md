@@ -14,7 +14,7 @@ Não há necessidade de uma assinatura, uma taxa única recebe suporte vitalíci
 
 ## Gunbot é usado por milhares de usuários e tem uma comunidade incrível ❤️
 
-![](.gitbook/assets/image-17%20%281%29.png)
+![](.gitbook/assets/image-17%20%282%29.png)
 
 {% page-ref page="setup-and-general-settings/installation/" %}
 

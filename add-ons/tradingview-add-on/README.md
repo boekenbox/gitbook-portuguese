@@ -60,7 +60,7 @@ To run Gunbot with the TradingView add-on, the following are the only relevant s
 
 Open the settings by going to **Settings** &gt; **TradingView.**
 
-![](../../.gitbook/assets/image-1%20%281%29.png)
+![](../../.gitbook/assets/image-1%20%282%29.png)
 
 Trading limits for buy orders are set in the configuration settings, optionally you can override these by specifying the trading limit in the alert message contents.
 

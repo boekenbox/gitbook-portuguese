@@ -2,14 +2,13 @@
 
 * [Bem vindo ao Wiki em português do Gunbot!](README.md)
 
-## Sobre
+## Sobre <a id="about"></a>
 
 * [O que há de novo no v12?](about/whats-new-v12.md)
-* [Como comprar o Gunbot](about/resellers.md)
 * [Exchanges suportadas](about/supported-exchanges.md)
 * [Requisitos do Sistema](about/system-requirements.md)
 
-## Setup & Configurações Gerais
+## Setup & Configurações Gerais <a id="setup-and-general-settings"></a>
 
 * [Instalação & início](setup-and-general-settings/installation/README.md)
   * [Download do software](setup-and-general-settings/installation/download.md)
@@ -33,7 +32,7 @@
   * [Configurações da GUI](setup-and-general-settings/other-global-settings/gui-settings.md)
   * [Websockets](setup-and-general-settings/other-global-settings/websockets.md)
 
-## Como trabalhar com o Gunbot
+## Como trabalhar com o Gunbot <a id="how-to-work-with-gunbot"></a>
 
 * [Aprendendo o básico](how-to-work-with-gunbot/basic-workings/README.md)
   * [Lógica de Trading](how-to-work-with-gunbot/basic-workings/trading-logic.md)
@@ -47,7 +46,7 @@
   * [Pares de Trade](how-to-work-with-gunbot/editing-strategies-and-pairs/trading-pairs.md)
 * [Monitoramento](how-to-work-with-gunbot/monitoring.md)
 
-## Opções de estratpegias de trading
+## Opções de estratpegias de trading <a id="trading-strategy-options"></a>
 
 * [Sobre as estratégias do Gunbot](trading-strategy-options/about-gunbot-strategies/README.md)
   * [Métodos de Trade](trading-strategy-options/about-gunbot-strategies/trading-methods.md)
